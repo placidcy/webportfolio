@@ -414,6 +414,11 @@ html.has-scroll-dragging {
     margin-bottom: 10px;
 }
 
+.about_box .about4 p:last-child {
+    margin-top: 10px;
+    text-align: right;
+}
+
 /* menu_box */
 .menu_box {
     position: absolute;
