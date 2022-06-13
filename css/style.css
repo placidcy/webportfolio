@@ -550,7 +550,7 @@ html.has-scroll-dragging {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around
+    align-content: space-around;
 }
 
 .work h3 {
@@ -598,7 +598,7 @@ html.has-scroll-dragging {
 .work2 .right {
     width: 77%;
     height: 80%;
-    background: url(../img/websiteImage1.jpg) no-repeat center center;
+    background: url(../img/websiteImage2.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
 }
