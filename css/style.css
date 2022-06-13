@@ -387,7 +387,7 @@ html.has-scroll-dragging {
 .about_box .about3 .img {
     width: 100%;
     height: 60%;
-    background: url(../img/picture1.jpg) no-repeat;
+    background: url(../img/picture4.jpg) no-repeat;
     background-size: cover;
     margin-bottom: 1%;
 }
@@ -590,7 +590,7 @@ html.has-scroll-dragging {
 .work1 .right {
     width: 77%;
     height: 80%;
-    background: url(../img/webclassImage.jpg) no-repeat center center;
+    background: url(../img/webstandardImg.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
 }
@@ -598,7 +598,7 @@ html.has-scroll-dragging {
 .work2 .right {
     width: 77%;
     height: 80%;
-    background: url(../img/websiteImage2.jpg) no-repeat center center;
+    background: url(../img/mainSiteImg.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
 }
@@ -614,7 +614,7 @@ html.has-scroll-dragging {
 .work4 .right {
     width: 77%;
     height: 80%;
-    background: url(../img/reactImage.jpg) no-repeat center center;
+    background: url(../img/reactImg.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
 }
@@ -622,7 +622,7 @@ html.has-scroll-dragging {
 .work5 .right {
     width: 77%;
     height: 80%;
-    background: url(../img/game.jpg) no-repeat center center;
+    background: url(../img/gameImg.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
 }
