@@ -334,7 +334,7 @@ html.has-scroll-dragging {
 }
 
 .about_box .about1 .img {
-    background: url(https://placidcy.github.io/Portfolio/img/Frame%202.jpg) no-repeat center center;
+    background: url(../img/picture1.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -387,7 +387,7 @@ html.has-scroll-dragging {
 .about_box .about3 .img {
     width: 100%;
     height: 60%;
-    background: url(https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat;
+    background: url(../img/picture2.jpg) no-repeat;
     background-size: cover;
     margin-bottom: 1%;
 }
