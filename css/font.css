@@ -1,0 +1,58 @@
+/* Sulphur Point */
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+
+/* porter sans block */
+@import url('http://fonts.cdnfonts.com/css/porter-sans-block');
+
+/* Italiana */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Raleway+Dots&display=swap');
+
+/* 'Sulphur Point'*/
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+
+/* Chosunilbo_myungjo */
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 'Bebas Neue' */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* @import url(//db.onlinewebfonts.com/c/ba65c7020043d1d406686743e82e2e5d?family=Bebas+Neue); */
+
+/* Dosis */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+/* anton */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* PT Sans Narrow */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+/* IropkeBatang */
+@font-face {
+    font-family: 'IropkeBatang';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.ttf') format("truetype");
+    font-display: swap;
+}
+
+/* font-family: 'Monoton', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/* font-family: 'Rubik Moonrocks', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+/* font-family: 'Bungee Inline', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
