@@ -1,4 +1,3 @@
-/* locomotive-scroll */
 html.has-scroll-smooth {
     overflow: hidden;
 }
@@ -87,73 +86,109 @@ html.has-scroll-dragging {
     bottom: 0;
 }
 
-/* mainpage*/
+/* layout */
 #contents {
     display: flex;
 }
 
-#contents section {
+#contents>section {
     min-height: 100vh;
 }
 
-/* scroll */
-.scroll_value {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+#section2 {
+    background: #444;
+}
+
+#section4 {
+    background: #666;
+}
+
+#section5 {
+    background: #777;
+}
+
+#section6 {
+    background: #888;
 }
 
 /* section1 */
-.mainPage {
-    background-color: #F1E0DB;
+#section1 {
+    color: #fff;
+    background: #F1E0DB;
     display: flex;
-    align-items: flex-end;
+    align-items: end;
     justify-content: space-between;
     position: relative;
     width: 100vw;
 }
 
-.mainPage_title {
+.sec1_tit {
     position: absolute;
     left: 5vw;
     top: 4vw;
+    color: #000;
 }
 
-.mainPage_title h1 {
+.sec1_tit h1 {
+    font-family: 'Sulphur Point';
     font-size: 6vw;
     line-height: 0.9;
     margin-bottom: 1vw;
-    font-family: 'Sulphur Point';
 }
 
-.mainPage_title p {
+.sec1_tit p {
     font-size: 16px;
     line-height: 1.4;
     font-family: 'IropkeBatang';
 }
 
-.mainPage_subMenu {
+.sec1_menu {
     width: 100%;
-    height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: end;
 }
 
-.mainPage_subMenu div {
+.sec1_menu>div {
+    width: 25%;
     transition:
         width 0.5s cubic-bezier(0, 1.45, 0.62, 1.3),
         height 0.8s cubic-bezier(0, 0.73, 0.14, 1.2),
         border-radius 0.3s cubic-bezier(0, 1.45, 0.62, 1.3);
 }
 
-.mainPage_subMenu div h2 {
+.sec1_menu>div h2 {
     color: #000;
     font-size: 18vw;
     text-align: center;
     position: relative;
 }
 
-.mainPage_subMenu div h2::after {
+.sec1_menu>.box1 {
+    background: #F0A398;
+    height: 45vh;
+    font-family: 'Raleway Dots';
+    margin-left: 5vw;
+}
+
+.sec1_menu>.box2 {
+    background: #BA85CC;
+    height: 60vh;
+    font-family: 'Monoton';
+}
+
+.sec1_menu>.box3 {
+    background: #85B2CC;
+    height: 75vh;
+    font-family: 'Rubik Moonrocks';
+}
+
+.sec1_menu>.box4 {
+    background: #FFD395;
+    height: 45vh;
+    font-family: 'Bungee Inline';
+}
+
+.sec1_menu>div h2::after {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -164,171 +199,133 @@ html.has-scroll-dragging {
     opacity: 0;
 }
 
-.mainPage_subMenu .menuBox1 {
-    width: 25%;
-    height: 45vh;
-    background-color: #F0A398;
-    margin-left: 5vw;
-}
-
-.mainPage_subMenu .menuBox1 h2 {
-    font-family: 'Raleway Dots';
-    font-weight: normal;
-}
-
-.mainPage_subMenu .menuBox2 {
-    width: 25%;
-    height: 60vh;
-    background-color: #BA85CC;
-}
-
-.mainPage_subMenu .menuBox2 h2 {
-    font-family: "Monoton";
-    font-weight: normal;
-}
-
-.mainPage_subMenu .menuBox3 {
-    width: 25%;
-    height: 75vh;
-    background-color: #85B2CC;
-}
-
-.mainPage_subMenu .menuBox3 h2 {
-    font-family: "Rubik Moonrocks";
-    font-weight: normal;
-}
-
-.mainPage_subMenu .menuBox4 {
-    width: 25%;
-    height: 45vh;
-    background-color: #FFD395;
-}
-
-.mainPage_subMenu .menuBox4 h2 {
-    font-family: "Bungee Inline";
-    /* font-family: "Rubik Moonrocks"; */
-    font-weight: normal;
-    transform: translateY(50px);
-}
-
-/* ::after */
-.mainPage_subMenu .menuBox1:hover h2::after {
+.sec1_menu .box1:hover h2::after {
     opacity: 1;
 }
 
-.mainPage_subMenu .menuBox2:hover h2::after {
+.sec1_menu .box2:hover h2::after {
     opacity: 1;
 }
 
-.mainPage_subMenu .menuBox3:hover h2::after {
+.sec1_menu .box3:hover h2::after {
     opacity: 1;
 }
 
-.mainPage_subMenu .menuBox4:hover h2::after {
+.sec1_menu .box4:hover h2::after {
     opacity: 1;
 }
 
-.mainPage_subMenu .menuBox1 h2::after {
+.sec1_menu>.box1 h2::after {
     content: "about me";
 }
 
-.mainPage_subMenu .menuBox2 h2::after {
+.sec1_menu>.box2 h2::after {
     content: "site";
 }
 
-.mainPage_subMenu .menuBox3 h2::after {
+.sec1_menu>.box3 h2::after {
     content: "script";
 }
 
-.mainPage_subMenu .menuBox4 h2::after {
+.sec1_menu>.box4 h2::after {
     content: "contact";
 }
 
-/* hover */
-/* menuBox1 */
-.mainPage_subMenu .menuBox1:hover {
+.sec1_menu>.box3 h2 {
+    font-size: 22vw;
+    line-height: 1;
+}
+
+.sec1_menu .box1:hover {
+    width: 40%;
+    height: 60vh;
+    border-radius: 500px 500px 0 0;
+}
+
+.sec1_menu .box1:hover~.box2 {
+    width: 20%;
+    height: 50vh;
+}
+
+.sec1_menu .box1:hover~.box3 {
+    width: 20%;
+    height: 50vh;
+}
+
+.sec1_menu .box1:hover~.box4 {
+    width: 20%;
+    height: 50vh;
+}
+
+.sec1_menu .box2:hover {
+    width: 40%;
+    height: 70vh;
+    border-radius: 500px 500px 0 0;
+}
+
+.sec1_menu .box2:hover~.box1 {
+    width: 20%;
+    height: 50vh;
+}
+
+.sec1_menu .box2:hover~.box3 {
+    width: 20%;
+    height: 50vh;
+}
+
+.sec1_menu .box2:hover~.box4 {
+    width: 20%;
+    height: 50vh;
+}
+
+.sec1_menu .box3:hover {
     width: 40%;
     border-radius: 500px 500px 0 0;
 }
 
-.mainPage_subMenu .menuBox1:hover~.menuBox2 {
+.sec1_menu .box3:hover~.box1 {
     width: 20%;
 }
 
-.mainPage_subMenu .menuBox1:hover~.menuBox3 {
+.sec1_menu .box3:hover~.box2 {
     width: 20%;
 }
 
-.mainPage_subMenu .menuBox1:hover~.menuBox4 {
+.sec1_menu .box3:hover~.box4 {
     width: 20%;
 }
 
-/* menuBox2 */
-.mainPage_subMenu .menuBox2:hover {
-    width: 40%;
-    border-radius: 500px 500px 0 0;
-}
-
-.mainPage_subMenu .menuBox2:hover~.menuBox1 {
-    width: 20%;
-}
-
-.mainPage_subMenu .menuBox2:hover~.menuBox3 {
-    width: 20%;
-}
-
-.mainPage_subMenu .menuBox2:hover~.menuBox4 {
-    width: 20%;
-}
-
-/* menuBox3 */
-.mainPage_subMenu .menuBox3:hover {
-    width: 40%;
-    border-radius: 500px 500px 0 0;
-}
-
-.mainPage_subMenu .menuBox3:hover~.menuBox1 {
-    width: 20%;
-}
-
-.mainPage_subMenu .menuBox3:hover~.menuBox2 {
-    width: 20%;
-}
-
-.mainPage_subMenu .menuBox3:hover~.menuBox4 {
-    width: 20%;
-}
-
-/* menuBox4 */
-.mainPage_subMenu .menuBox4:hover {
+.sec1_menu .box4:hover {
     width: 30%;
+    height: 90vh;
     border-radius: 500px 500px 0 0;
 }
 
-.mainPage_subMenu .menuBox4:hover~.menuBox1 {
+.sec1_menu .box4:hover~.box1 {
     width: 25%;
 }
 
-.mainPage_subMenu .menuBox4:hover~.menuBox2 {
+.sec1_menu .box4:hover~.box2 {
     width: 25%;
 }
 
-.mainPage_subMenu .menuBox4:hover~.menuBox3 {
+.sec1_menu .box4:hover~.box3 {
     width: 20%;
 }
 
 /* section2 */
-.aboutMePage {
+#section2 {
     background: #F1E0DB;
     position: relative;
     padding-right: 30vw;
 }
 
-.aboutMe_box {
+/* about_box */
+.about_box {
     display: flex;
 }
 
-.aboutMe_box .aboutMe_imgBox {
+.about_box .about1 {
     width: 400px;
     max-height: 60vh;
     background: #F0A39C;
@@ -336,150 +333,150 @@ html.has-scroll-dragging {
     padding: 1%;
 }
 
-.aboutMe_box .aboutMe_imgBox .img {
-    background: url(../img/Frame\ 2.jpg) no-repeat center center;
+.about_box .about1 .img {
+    background: url(https://placidcy.github.io/Portfolio/img/Frame%202.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100%;
 }
 
-.aboutMe_box .aboutMe_desc1 {
+.about_box .about2 {
     width: 400px;
     max-height: 70vh;
     background: #E26747;
     color: #fff;
-    font-family: "IropkeBatang";
+    font-family: 'IropkeBatang';
     padding: 1%;
     white-space: normal;
     text-align: justify;
+    overflow-y: scroll;
 }
 
-.aboutMe_box .aboutMe_desc1 h3 {
-    margin-bottom: 20px;
+.about_box .about2 h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
     display: inline-block;
-    text-decoration: underline #fff;
 }
 
-.aboutMe_box .aboutMe_desc1 p {
+.about_box .about2 p {
     margin-bottom: 10px;
 }
 
-.aboutMe_box .aboutMe_desc2 {
+.about_box .about3 {
     width: 400px;
     height: 85vh;
     background: #E3502B;
     padding: 1%;
     white-space: normal;
     text-align: justify;
+    overflow-y: scroll;
     color: #fff;
-    font-family: "IropkeBatang";
+    font-family: 'IropkeBatang';
 }
 
-.aboutMe_box .aboutMe_desc2 h3 {
-    margin-bottom: 20px;
+.about_box .about3 h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
     display: inline-block;
-    text-decoration: underline #fff;
 }
 
-.aboutMe_box .aboutMe_desc2 p {
-    margin-bottom: 20px;
+.about_box .about3 p {
+    margin-bottom: 10px;
 }
 
-.aboutMe_desc2 .img {
+.about_box .about3 .img {
     width: 100%;
     height: 60%;
-    background: url(../img/Frame\ 3.jpg) no-repeat;
+    background: url(https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat;
     background-size: cover;
     margin-bottom: 1%;
 }
 
-.aboutMe_desc3 {
+.about_box .about4 {
     width: 400px;
     height: 45vh;
     background: #DE847C;
     padding: 1%;
     white-space: normal;
     text-align: justify;
+    overflow-y: scroll;
     color: #fff;
     font-family: 'IropkeBatang';
 }
 
-.aboutMe_desc3 h3 {
-    margin-bottom: 20px;
-    text-decoration: underline #fff;
+.about_box .about4 h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
 }
 
-.aboutMe_desc3 p:nth-child(1) {
-    margin-bottom: 20px;
+.about_box .about4 p {
+    margin-bottom: 10px;
 }
 
-/* menu */
-.subMenu {
+/* menu_box */
+.menu_box {
     position: absolute;
     left: 20vw;
     bottom: 0;
     display: flex;
     align-items: flex-end;
     text-align: center;
-    font-family: "Sulphur Point";
+    font-family: 'Sulphur Point';
     text-transform: uppercase;
 }
 
-.subMenu span {
+.menu_box span {
     padding-top: 20px;
     opacity: 1;
 }
 
-.subMenu p {
-    font-family: "IropkeBatang";
-}
-
-.subMenu .aboutMe {
+.menu_box .about {
     background: #F0A398;
     width: 10vw;
     height: 50px;
 }
 
-.subMenu .site {
+.menu_box .site {
     background: #BA85CC;
     width: 10vw;
     height: 50px;
 }
 
-.subMenu .script {
+.menu_box .script {
     background: #85B2CC;
     width: 10vw;
     height: 50px;
 }
 
-.subMenu .contact {
+.menu_box .contact {
     background: #FFD395;
     width: 10vw;
     height: 50px;
 }
 
-.subMenu .active {
+.menu_box .active {
     width: 20vw;
     height: 40vh;
 }
 
-.subMenu span {
-    font-family: "IropkeBatang";
+.menu_box span {
+    font-family: 'IropkeBatang';
     opacity: 0;
 }
 
-.subMenu em {
-    font-family: "IropkeBatang";
+.menu_box em {
+    font-family: 'IropkeBatang';
     opacity: 0;
 }
 
-.subMenu .active span {
+.menu_box .active span {
     font-size: 4vw;
     display: block;
     opacity: 1;
 }
 
-.subMenu .active em {
+.menu_box .active em {
     padding: 1vw 2vw;
     font-size: 16px;
     opacity: 1;
@@ -488,497 +485,127 @@ html.has-scroll-dragging {
     text-align: left;
 }
 
-.subMenu .aboutMe.active span {
+.menu_box .about.active span {
     font-size: 4.4vw;
-    font-family: "Raleway Dots";
+    font-family: 'Raleway Dots';
 }
 
-.subMenu .site.active span {
-    font-size: 4.4vw;
-    font-family: "Monoton";
+.menu_box .site.active span {
+    font-size: 3.6vw;
+    line-height: 1.7;
+    font-family: 'Monoton';
 }
 
-.subMenu .script.active span {
-    font-family: "Rubik Moonrocks";
+.menu_box .script.active span {
+    font-family: 'Rubik Moonrocks';
 }
 
-.subMenu .contact.active span {
-    font-family: "Bungee Inline";
+.menu_box .contact.active span {
+    font-family: 'Bungee Inline';
 }
 
-/* seciton3 */
-.sitePage {
-    background: #F1E0DB;
+/* section3 */
+#section3 {
     position: relative;
+    background: #F1E0DB;
 }
 
-.siteBox {
+.site_box {
     display: flex;
     padding-left: 60vw;
 }
 
-.siteBox .webstandard {
+.site_box .work1 {
     width: 70vw;
     height: 70vh;
     background-color: #BA85CC;
 }
 
-.siteBox .webclass {
+.site_box .work2 {
     width: 70vw;
     height: 70vh;
     background-color: #BA85CC;
 }
 
-.siteBox .php {
-    width: 70vw;
-    height: 70vh;
-    background-color: #BA85CC;
+.site_box .work3 {
+    width: 10vw;
+    height: 30vh;
+    background-color: #666;
 }
 
-.siteBox .react {
-    width: 70vw;
-    height: 70vh;
-    background-color: #BA85CC;
+.site_box .work4 {
+    width: 10vw;
+    height: 30vh;
+    background-color: #555;
 }
 
-.siteBox .game {
-    width: 70vw;
-    height: 70vh;
-    background-color: #BA85CC;
+.site_box .work5 {
+    width: 10vw;
+    height: 30vh;
+    background-color: #444;
 }
 
-.siteBox .siteSection {
-    padding: 1%;
+.work {
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;
+    align-content: space-around
 }
 
-.siteBox .siteSection h3 {
+.work h3 {
     width: 100%;
     font-size: 3.6vw;
     line-height: 1;
     margin-bottom: 4vh;
     font-family: 'Monoton';
-    margin-top: 46px;
-    margin-bottom: 38px;
 }
 
-.siteBox .siteSection h4 {
-    font-family: "IropkeBatang";
-}
-
-.siteSection .leftSide {
+.work .left {
     width: 20%;
     white-space: normal;
 }
 
-.siteSection .leftSide h4 {
+.work .left h4 {
     font-family: 'IropkeBatang';
     font-size: 22px;
     margin-bottom: 15px;
-    margin-top: 29px;
 }
 
-.siteSection .leftSide p {
+.work .left p {
     font-family: 'IropkeBatang';
-    text-align: justify;
-    margin-top: 16px;
     margin-bottom: 20px;
 }
 
-.siteSection .leftSide .btn {
+.work .left .btn {
     background: #9253A8;
     display: block;
     text-align: center;
-    text-decoration: none;
     color: #fff;
     font-family: 'IropkeBatang';
     padding: 5px;
     margin-bottom: 5px;
 }
 
-.webstandard .rightSide {
+.work .right {
     width: 77%;
     height: 80%;
-    background: url(../img/webstandard_img.jpg) no-repeat center center;
+    background: url(https://placidcy.github.io/Portfolio/img/webclassImage.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
 }
 
-
-.webclass .rightSide {
-    width: 77%;
-    height: 80%;
-    background: url(../img/webclassImage.jpg) no-repeat center center;
-    background-size: cover;
-    border: 4px solid #000;
-}
-
-.php .rightSide {
-    width: 77%;
-    height: 80%;
-    background: url(../img/phpImage.jpg) no-repeat center center;
-    background-size: cover;
-    border: 4px solid #000;
-}
-
-.react .rightSide {
-    width: 77%;
-    height: 80%;
-    background: url(../img/reactImage.jpg) no-repeat center center;
-    background-size: cover;
-    border: 4px solid #000;
-}
-
-.game .rightSide {
-    width: 77%;
-    height: 80%;
-    background: url(../img/gameImage.jpg) no-repeat center center;
-    background-size: cover;
-    border: 4px solid #000;
-}
-
-
-.sitePage .subMenu .site span{
-    font-family: 'Monoton';
-}
-
-/* script */
-.scriptPage {
-    width: 200vw;
-    background-color: #F1E0DB;
-}
-
-.scriptTitle .title {
-    font-family: "Italiana";
-    font-size: 300px;
-    line-height: 1.2;
-    margin-top: 150px;
-    font-weight: normal;
-}
-
-.scriptSubmenu {
+/* #section4 */
+#section4 {
     width: 100vw;
-    position: relative;
 }
 
-.scriptContents {
-    height: 100vh;
-}
-
-.upside {
-    background-color: #000;
-    height: 15%;
-    width: 200vw;
-}
-
-.upside span {
-    font-family: 'Bebas Neue';
-    display: inline-block;
-    font-size: 40px;
-    line-height: 0.9;
-    text-align: start;
-    color: #fff;
-    margin-left: 350px;
-    margin-top: 40px;
-}
-
-.downside {
-    height: 85%;
-    width: 200vw;
-}
-
-.downside .scriptBox {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 250px;
-}
-
-/* mouseEffect */
-.mouseEffect .textBox{
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.mouseEffect .titleBox {
-    float: left;
-}
-
-.mouseEffect .mouse_subtitle {
-    font-family: 'Dosis';
-    font-size: 16px;
-}
-
-.mouseEffect .mouse_title {
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-}
-
-.mouseEffect .mouse_desc {
-    float: right;
-    text-align: justify;
-    font-family: 'Chosunilbo_myungjo';
-    line-height: 1.5;
-}
-
-/* sliderEffect */
-.sliderEffect .textBox{
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.sliderEffect .titleBox{
-    float: left;
-}
-
-.sliderEffect .slider_subtitle{
-    font-family: 'Dosis';
-    font-size: 16px;
-}
-
-.sliderEffect .slider_title{
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-}
-
-.sliderEffect .slider_desc{
-    float: right;
-    text-align: justify;
-    font-family: 'Chosunilbo_myungjo';
-    line-height: 1.5;
-}
-
-/* parallaxEffect */
-.parallaxEffect .textBox {
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.parallaxEffect .titleBox{
-    float: left;
-}
-
-.parallaxEffect .parallax_subtitle{
-    font-family: 'Dosis';
-    font-size: 16px;
-}
-
-.parallaxEffect .parallax_title{
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-}
-
-.parallaxEffect .parallax_desc {
-    float: right;
-    text-align: justify;
-    font-family: 'Chosunilbo_myungjo';
-    line-height: 1.5;
-}
-
-/* contact */
-/* submenu */
-.contactSubMenu {
+/* #section5 */
+#section5 {
     width: 100vw;
-    position: relative;
 }
 
-/* contactPage */
-.contactPage1 {
-    width: 110vw;
-    background-color: #FFD395;
-    position: relative;
-    overflow: hidden;
+/* #section6 */
+#section6 {
+    width: 100vw;
 }
-
-.contactPage1 .sideText {
-    font-size: 20px;
-    font-family: "Bebas Neue";
-    position: absolute;
-    left: 110px;
-    top: 370px;
-    transform: rotate(90deg);
-}
-
-.contactPage1 h2{
-    font-size: 300px;
-    font-family: "Bebas Neue";
-    margin-top: 280px;
-}
-
-.contactPage1 .descBox{
-    text-align: left;
-    margin-left: 200px;
-    float: left;
-}
-
-.contactPage1 .contactIntro{
-    font-size: 20px;
-    font-family: 'PT Sans Narrow';
-}
-
-.contactPage1 .locationDesc{
-    font-size: 20px;
-    font-family: 'PT Sans Narrow';
-    margin-top: 30px;
-}
-
-.contactPage1 .mapImage {
-    background: url(../img/naver_map\ 1.jpg);
-    width: 780px;
-    height: 787px;
-    float: right;
-    margin-top: 100px;
-    margin-right: 150px;
-}
-
-/* sideImage */
-.sideImage .img{
-    background: url(../img/Rectangle\ 10847.jpg);
-    width: 600px;
-    height: 100vh;
-}
-
-/* contact2 */
-.contactPage2 {
-    width: 85vw;
-    background-color: #F5EEEC;
-    overflow: hidden;
-}
-
-.contactPage2 .email_title{
-    font-size: 300px;
-    font-family: "Bebas Neue";
-    margin-top: 230px;
-    margin-left: 170px;
-}
-
-.contactPage2 .email_descBox{
-    float: right;
-    margin-right: 130px;
-}
-
-.contactPage2 .email_descBox p{
-    font-size: 20px;
-    font-family: 'PT Sans Narrow';
-    text-align: left;
-    margin-bottom: 60px;
-}
-
-.contactPage2 .email_sideTitle{
-    font-family: "Bebas Neue";
-    font-size: 20px;
-}
-
-.contactPage2 .line {
-    height: 1.5px;
-    width: 500px;
-    background-color: black;
-    margin: 20px 0;
-}
-
-.contactPage2 .emailLink a{
-    font-family: "Bebas Neue";
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-}
-
-/* contactPage3 */
-.contactPage3 {
-    width: 70vw;
-    background-color: #000;
-    position: relative;
-}
-
-.contactPage3 .sideText1{
-    color: white;
-    font-size: 20px;
-    font-family: "Bebas Neue";
-    transform: rotate(90deg);
-    position: absolute;
-    left: 80px;
-    top: 180px;
-}
-
-.contactPage3 .sideText2 {
-    color: white;
-    font-size: 20px;
-    font-family: "Bebas Neue";
-    position: absolute;
-    left: 125px;
-    top: 100px;
-}
-
-.contactPage3 .mainTitle{
-    color: white;
-    font-size: 170px;
-    font-family: "Bebas Neue";
-    margin-left: 200px;
-    margin-top: 150px;
-    line-height: 1.0;
-}
-
-.contactPage3 .imageBox {
-    display: flex;
-    margin : 20px 0 20px 200px;
-}
-
-.imageBox .img {
-    width: 250px;
-    height: 170px;
-    margin-right: 40px;
-}
-
-.imageBox .img1 {
-    background: url("../img/otherInfo_image1.jpg");
-}
-
-.imageBox .img2 {
-    background: url("../img/otherInfo_image2.jpg");
-}
-
-.imageBox .img3 {
-    background: url("../img/otherInfo_image3.jpg");
-}
-
-.imageBox .img4 {
-    background: url("../img/otherInfo_image4.jpg");
-}
-.contactPage3 .otherSites .title{
-    font-size: 18px;
-    font-family: "Bebas Neue";
-    color: white;
-}
-
-.otherSites {
-    margin-left: 200px;
-}
-
-.otherSites .line {
-    height: 1.5px;
-    width: 600px;
-    margin: 20px 0;
-    background-color: white;
-}
-
-.otherSites .linkText {
-    color: white;
-    font-size: 18px;
-    font-family: "Bebas Neue";
-}
-
-.otherSites .react img{
-    vertical-align: middle;
-}
-
-.otherSites .webClass img{
-    vertical-align: middle;
-}
-
-.otherSites .github img{
-    vertical-align: middle;
-}
-
