@@ -387,7 +387,7 @@ html.has-scroll-dragging {
 .about_box .about3 .img {
     width: 100%;
     height: 60%;
-    background: url(../img/picture4.jpg) no-repeat;
+    background: url(../img/picture3.jpg) no-repeat;
     background-size: cover;
     margin-bottom: 1%;
 }
@@ -523,32 +523,31 @@ html.has-scroll-dragging {
 .site_box .work1 {
     width: 70vw;
     height: 70vh;
-    margin-left: 20px;
     background-color: #BA85CC;
 }
 
 .site_box .work2 {
     width: 70vw;
-    height: 70vh;
-    background-color: #BA85CC;
+    height: 75vh;
+    background-color: #b26bca;
 }
 
 .site_box .work3 {
     width: 70vw;
-    height: 70vh;
-    background-color: #BA85CC;
+    height: 80vh;
+    background-color: #b05ccc;
 }
 
 .site_box .work4 {
     width: 70vw;
-    height: 70vh;
-    background-color: #BA85CC;
+    height: 85vh;
+    background-color: #ac50ca;
 }
 
 .site_box .work5 {
     width: 70vw;
-    height: 70vh;
-    background-color: #BA85CC;
+    height: 90vh;
+    background-color: #9b21c4;
 }
 
 .work {
@@ -604,23 +603,23 @@ html.has-scroll-dragging {
 
 .work2 .right {
     width: 77%;
-    height: 100%;
-    background: url(../img/mainSiteImg.jpg) no-repeat center center;
+    height: 80%;
+    background: url(../img/mainpageImg.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
 }
 
 .work3 .right {
     width: 77%;
-    height: 110%;
-    background: url(../img/phpImage.jpg) no-repeat center center;
+    height: 80%;
+    background: url(../img/phpImg.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
 }
 
 .work4 .right {
     width: 77%;
-    height: 120%;
+    height: 80%;
     background: url(../img/reactImg.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
@@ -628,7 +627,7 @@ html.has-scroll-dragging {
 
 .work5 .right {
     width: 77%;
-    height: 130%;
+    height: 80%;
     background: url(../img/gameImg.jpg) no-repeat center center;
     background-size: cover;
     border: 4px solid #000;
