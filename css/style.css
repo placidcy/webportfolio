@@ -205,9 +205,10 @@ html.has-scroll-dragging {
 }
 
 .mainPage_subMenu .menuBox4 h2 {
-    /* font-family: "Bungee Inline"; */
-    font-family: "Rubik Moonrocks";
+    font-family: "Bungee Inline";
+    /* font-family: "Rubik Moonrocks"; */
     font-weight: normal;
+    transform: translateY(50px);
 }
 
 /* ::after */
