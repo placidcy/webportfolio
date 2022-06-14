@@ -654,12 +654,12 @@ html.has-scroll-dragging {
 }
 
 .tetris .descSide {
-    width: 15%;
+    width: 20%;
     white-space: normal;
 }
 
 .tetris .pageSide {
-    width: 85%;
+    width: 80%;
     margin-left: 90px;
 }
 
@@ -699,7 +699,7 @@ html.has-scroll-dragging {
 }
 
 .typingGame .descSide {
-    width: 15%;
+    width: 20%;
     white-space: normal;
 }
 
@@ -715,7 +715,7 @@ html.has-scroll-dragging {
 }
 
 .typingGame .pageSide {
-    width: 85%;
+    width: 80%;
     margin-left: 90px;
     padding-bottom: 40px;
     overflow: hidden;
@@ -753,7 +753,7 @@ html.has-scroll-dragging {
 }
 
 .cardGame .descSide{
-    width: 15%;
+    width: 20%;
     white-space: normal;
 }
 
@@ -765,7 +765,7 @@ html.has-scroll-dragging {
 }
 
 .cardGame .pageSide {
-    width: 85%;
+    width: 80%;
     margin-left: 90px;
 }
 
