@@ -627,14 +627,14 @@ html.has-scroll-dragging {
     height: 100vh;
 }
 
-.tetris{
+.tetris .contents {
+    display: flex;
+}
+
+.tetris {
     background-color: #85B2CC;
     padding-left: 2vw;
     height: 85vh;
-}
-
-.tetris .contents {
-    display: flex;
 }
 
 .tetris h3 {
