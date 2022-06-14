@@ -625,6 +625,8 @@ html.has-scroll-dragging {
 
 .contentsBox {
     margin-left: 80vw;
+    width: 100%;
+    height: 100%;
 }
 
 .tetris .contents {
@@ -634,7 +636,6 @@ html.has-scroll-dragging {
 .tetris {
     background-color: #85B2CC;
     padding-left: 2vw;
-    width: 100vw;
     height: 85vh;
 }
 
