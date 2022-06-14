@@ -632,6 +632,10 @@ html.has-scroll-dragging {
     padding: 1%;
 }
 
+.contentsBox .gameSection h3 {
+    margin-bottom: 4vh;
+}
+
 /* tetris */
 .tetris h3 {
     padding-left: 2vw;
