@@ -633,12 +633,9 @@ html.has-scroll-dragging {
 }
 
 .contentsBox .gameSection h3 {
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 }
 
-.contentsBox .gameSection iframe {
-
-}
 
 /* tetris */
 .tetris h3 {
@@ -667,10 +664,9 @@ html.has-scroll-dragging {
     margin-left: 80px;
 }
 
-.tetris iframe {
-    height: 75vh;
-}
+.tetris .pageSide iframe {
 
+}
 
 .tetris .descSide p {
     font-family: "ChosunilboNM";
@@ -719,9 +715,9 @@ html.has-scroll-dragging {
     display: flex;
 }
 
-
 .typingGame .pageSide {
     margin-left: 80px;
+    padding-bottom: 40px;
 }
 
 .typingGame .btn {
@@ -732,6 +728,10 @@ html.has-scroll-dragging {
     font-family: 'IropkeBatang';
     padding: 5px;
     margin-bottom: 5px;
+}
+
+.typingGame iframe {
+    height: 60vh;
 }
 
 /* cardGame */
@@ -776,6 +776,9 @@ html.has-scroll-dragging {
     font-family: 'IropkeBatang';
     padding: 5px;
     margin-bottom: 5px;
+}
+
+.cardGame iframe {
 }
 
 
