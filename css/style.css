@@ -674,6 +674,7 @@ html.has-scroll-dragging {
     font-size: 18px;
     text-align: justify;
     margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .tetris .btn {
@@ -708,6 +709,7 @@ html.has-scroll-dragging {
     font-size: 18px;
     text-align: justify;
     margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .typingGame .contents {
@@ -759,6 +761,7 @@ html.has-scroll-dragging {
     font-size: 18px;
     text-align: justify;
     margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .cardGame .pageSide {
