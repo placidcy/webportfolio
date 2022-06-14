@@ -657,7 +657,9 @@ html.has-scroll-dragging {
     margin-left: 80px;
 }
 
-.pageSide iframe {
+.tetris iframe {
+    width: 70vw;
+    height: 80vh;
 }
 
 
