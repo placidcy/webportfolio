@@ -636,6 +636,10 @@ html.has-scroll-dragging {
     margin-bottom: 4vh;
 }
 
+.contentsBox .gameSection iframe {
+
+}
+
 /* tetris */
 .tetris h3 {
     padding-left: 2vw;
@@ -650,7 +654,7 @@ html.has-scroll-dragging {
 
 .tetris {
     background-color: #85B2CC;
-    width: 100vw;
+    width: 90vw;
     height: 93vh;
 }
 
@@ -688,7 +692,7 @@ html.has-scroll-dragging {
 /* typingGame */
 .typingGame {
     background-color: #6ba8cc;
-    width: 100vw;
+    width: 90vw;
     height: 88vh;
 }
 
@@ -733,7 +737,7 @@ html.has-scroll-dragging {
 /* cardGame */
 .cardGame {
     background-color: #519dc9;
-    width: 100vw;
+    width: 90vw;
     height: 84vh;
 }
 
