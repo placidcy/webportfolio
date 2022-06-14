@@ -623,14 +623,20 @@ html.has-scroll-dragging {
 
 .contentsBox {
     margin-left: 80vw;
-    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: flex-end;
 }
 
+.contentsBox .gameSection {
+    padding: 1%;
+}
+
+/* tetris */
 .tetris h3 {
     padding-left: 2vw;
+    font-family: "Italiana";
+    font-size: 10vw;
 }
 
 .tetris .contents {
@@ -640,12 +646,8 @@ html.has-scroll-dragging {
 
 .tetris {
     background-color: #85B2CC;
+    width: 100vw;
     height: 93vh;
-}
-
-.tetris h3 {
-    font-family: "Italiana";
-    font-size: 10vw;
 }
 
 .tetris .descSide {
@@ -658,8 +660,7 @@ html.has-scroll-dragging {
 }
 
 .tetris iframe {
-    width: 70vw;
-    height: 80vh;
+    height: 75vh;
 }
 
 
@@ -679,6 +680,96 @@ html.has-scroll-dragging {
     padding: 5px;
     margin-bottom: 5px;
 }
+
+/* typingGame */
+.typingGame {
+    background-color: #6ba8cc;
+    width: 100vw;
+    height: 88vh;
+}
+
+.typingGame h3 {
+    padding-left: 2vw;
+    font-family: "Italiana";
+    font-size: 10vw;
+}
+
+.typingGame .descSide {
+    width: 15%;
+    white-space: normal;
+}
+
+.typingGame .descSide p {
+    font-family: "ChosunilboNM";
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.typingGame .contents {
+    padding-left: 2vw;
+    display: flex;
+}
+
+
+.typingGame .pageSide {
+    margin-left: 80px;
+}
+
+.typingGame .btn {
+    background: #3A7DA5;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: 'IropkeBatang';
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/* cardGame */
+.cardGame {
+    background-color: #519dc9;
+    width: 100vw;
+    height: 84vh;
+}
+
+.cardGame h3 {
+    padding-left: 2vw;
+    font-family: "Italiana";
+    font-size: 10vw;
+}
+
+.cardGame .descSide{
+    width: 15%;
+    white-space: normal;
+}
+
+.cardGame .descSide p {
+    font-family: "ChosunilboNM";
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cardGame .pageSide {
+    margin-left: 80px;
+}
+
+.cardGame .contents {
+    padding-left: 2vw;
+    display: flex;
+}
+
+.cardGame .btn {
+    background: #3A7DA5;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: 'IropkeBatang';
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
 
 /* #section5 */
 #section5 {
