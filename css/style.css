@@ -618,25 +618,27 @@ html.has-scroll-dragging {
 
 /* #section4 */
 #section4 {
-    width: 100vw;
-    height: 100vh;
     position: relative;
 }
 
 .contentsBox {
     margin-left: 80vw;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tetris h3 {
+    padding-left: 2vw;
 }
 
 .tetris .contents {
+    padding-left: 2vw;
     display: flex;
 }
 
 .tetris {
     background-color: #85B2CC;
-    padding-left: 2vw;
-    height: 85vh;
+    height: 90vh;
 }
 
 .tetris h3 {
