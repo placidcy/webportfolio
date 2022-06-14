@@ -629,7 +629,7 @@ html.has-scroll-dragging {
 }
 
 .contentsBox .gameSection {
-    padding: 1%;
+    padding: 0 1% 1% 1%;
 }
 
 .contentsBox .gameSection h3 {
