@@ -622,13 +622,15 @@ html.has-scroll-dragging {
 }
 
 .contentsBox {
-    padding-left: 80vw;
-    align-items: center;
+    margin-left: 80vw;
+    width: 100vw;
+    height: 100vh;
 }
 
 .tetris{
     background-color: #85B2CC;
     padding-left: 2vw;
+    height: 85vh;
 }
 
 .tetris .contents {
