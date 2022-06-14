@@ -662,10 +662,15 @@ html.has-scroll-dragging {
 
 .tetris .pageSide {
     margin-left: 80px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 37%;
 }
 
 .tetris .pageSide iframe {
-
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .tetris .descSide p {
