@@ -666,7 +666,7 @@ html.has-scroll-dragging {
 .tetris .pageSide .img {
     background: url(../img/tetrisImg.jpg) no-repeat center;
     width: 55vw;
-    height: 50vh;
+    height: 55vh;
 }
 
 .tetris .descSide p {
@@ -724,7 +724,7 @@ html.has-scroll-dragging {
 .typingGame .pageSide .img {
     background: url(../img/typingGameImg.jpg) no-repeat center;
     width: 55vw;
-    height: 50vh;
+    height: 55vh;
 }
 
 .typingGame .btn {
@@ -772,7 +772,7 @@ html.has-scroll-dragging {
 .cardGame .pageSide {
     background: url(../img/cardGameImg.jpg) no-repeat center;
     width: 55vw;
-    height: 50vh;
+    height: 53vh;
 }
 
 .cardGame .contents {
