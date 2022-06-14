@@ -623,11 +623,18 @@ html.has-scroll-dragging {
 
 .contentsBox {
     padding-left: 80vw;
+    align-items: center;
+}
+
+.contentsBox .test {
+    background-color: #9b21c4;
+    width: 100vw;
 }
 
 .tetris{
     background-color: #85B2CC;
     padding-left: 2vw;
+    height: 95vh;
 }
 
 .tetris .contents {
@@ -644,8 +651,13 @@ html.has-scroll-dragging {
     white-space: normal;
 }
 
+
 .tetris .pageSide {
     margin-left: 80px;
+}
+
+.pageSide iframe {
+    top: 10px;
 }
 
 
