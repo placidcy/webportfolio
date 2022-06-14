@@ -618,13 +618,13 @@ html.has-scroll-dragging {
 
 /* #section4 */
 #section4 {
+    width: 100vw;
+    height: 100vh;
     position: relative;
 }
 
 .contentsBox {
     margin-left: 80vw;
-    width: 100vw;
-    height: 100vh;
 }
 
 .tetris .contents {
@@ -634,12 +634,13 @@ html.has-scroll-dragging {
 .tetris {
     background-color: #85B2CC;
     padding-left: 2vw;
+    width: 100vw;
     height: 85vh;
 }
 
 .tetris h3 {
     font-family: "Italiana";
-    font-size: 200px;
+    font-size: 10vw;
 }
 
 .tetris .descSide {
