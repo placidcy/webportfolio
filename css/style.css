@@ -639,13 +639,11 @@ html.has-scroll-dragging {
 
 /* tetris */
 .tetris h3 {
-    padding-left: 2vw;
     font-family: "Italiana";
     font-size: 10vw;
 }
 
 .tetris .contents {
-    padding-left: 2vw;
     display: flex;
 }
 
@@ -661,10 +659,14 @@ html.has-scroll-dragging {
 }
 
 .tetris .pageSide {
+    width: 85%;
     margin-left: 80px;
 }
 
-.tetris .pageSide iframe {
+.tetris .pageSide .img {
+    background: url(../img/tetrisImg.jpg) no-repeat center;
+    width: 55vw;
+    height: 50vh;
 }
 
 .tetris .descSide p {
@@ -692,7 +694,6 @@ html.has-scroll-dragging {
 }
 
 .typingGame h3 {
-    padding-left: 2vw;
     font-family: "Italiana";
     font-size: 10vw;
 }
@@ -710,13 +711,19 @@ html.has-scroll-dragging {
 }
 
 .typingGame .contents {
-    padding-left: 2vw;
     display: flex;
 }
 
 .typingGame .pageSide {
+    width: 85%;
     margin-left: 80px;
     padding-bottom: 40px;
+}
+
+.typingGame .pageSide .img {
+    background: url(../img/typingGameImg.jpg) no-repeat center;
+    width: 55vw;
+    height: 50vh;
 }
 
 .typingGame .btn {
@@ -740,7 +747,6 @@ html.has-scroll-dragging {
 }
 
 .cardGame h3 {
-    padding-left: 2vw;
     font-family: "Italiana";
     font-size: 10vw;
 }
@@ -758,15 +764,17 @@ html.has-scroll-dragging {
 }
 
 .cardGame .pageSide {
+    width: 85%;
     margin-left: 80px;
 }
 
-.cardGame .pageSide iframe {
-    overflow: hidden;
+.cardGame .pageSide {
+    background: url(../img/cardGameImg.jpg) no-repeat center;
+    width: 55vw;
+    height: 50vh;
 }
 
 .cardGame .contents {
-    padding-left: 2vw;
     display: flex;
 }
 
