@@ -796,4 +796,42 @@ html.has-scroll-dragging {
 }
 
 /* section6(contact) */
-.contact {}
+.contact {
+    display: flex;
+}
+.contact .descBox{
+    width: 75vw;
+    height: 100vw;
+    background-color: #6ea53a;
+}
+.descBox .contactDesc{}
+.descBox .contactDesc .title{}
+.descBox .contactDesc .subTitle{}
+.descBox p{}
+
+.descBox .emailBtn{}
+.emailBtn .email{}
+.emailBtn .email a{}
+
+.contact .imgBox {
+    width: 950px;
+    height: 1080px;
+    background-color: #a59e3a;
+}
+
+.contact .imgBox .img{
+    background: url(../img/sideImage.jpg);
+    width: 950px;
+    height: 1080px;
+}
+
+.contact .sideSection {
+    width: 75vw;
+    height: 100vw;
+    background-color: #3A7DA5;
+}
+.contact .sideSection .side{}
+.contact .toFirstPageBtn a{}
+
+
+
