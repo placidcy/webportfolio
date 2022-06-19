@@ -618,6 +618,7 @@ html.has-scroll-dragging {
 /* #section4 */
 #section4 {
     position: relative;
+    background: #F1E0DB;
 }
 
 .contentsBox {
@@ -793,45 +794,99 @@ html.has-scroll-dragging {
     position: relative;
     width: 100vw;
     height: 100vh;
+    background: #F1E0DB;
 }
 
 /* section6(contact) */
-.contact {
+#section6 {
+    position: relative;
     display: flex;
-}
-.contact .descBox{
-    width: 75vw;
-    height: 100vw;
-    background-color: #6ea53a;
-}
-.descBox .contactDesc{}
-.descBox .contactDesc .title{}
-.descBox .contactDesc .subTitle{}
-.descBox p{}
-
-.descBox .emailBtn{}
-.emailBtn .email{}
-.emailBtn .email a{}
-
-.contact .imgBox {
-    width: 950px;
-    height: 1080px;
-    background-color: #a59e3a;
+    height: 100vh;
+    background-color: #F1E0DB;
 }
 
-.contact .imgBox .img{
-    background: url(../img/sideImage.jpg);
-    width: 950px;
-    height: 1080px;
+.leftside {}
+.leftside .leftText{
+    transform: rotate(90deg);
+    margin-top: 21vh;
+    margin-right: 3vw;
 }
 
-.contact .sideSection {
-    width: 75vw;
-    height: 100vw;
-    background-color: #3A7DA5;
+.leftside .leftText p{
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1vw;
 }
-.contact .sideSection .side{}
-.contact .toFirstPageBtn a{}
+
+#section6 .descBox {
+    width: 65vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.descBox .contactDesc{
+    margin-bottom: 45vh;
+}
+
+.descBox .contactDesc .title{
+    font-family: "Bebas Neue";
+    font-size: 2vw;
+}
+
+.descBox p {
+    margin-top: 2vh;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1vw;
+}
+
+.descBox .emailSection{
+    margin-top: 2vh;
+    border: 1px solid;
+    width: 7vw;
+    height: 5vh;
+}
+
+.descBox .emailSection .email {
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.descBox .emailSection .email a{
+    font-family: "Bebas Neue";
+    font-size: 1vw;
+}
+
+
+#section6 .descBox .img{
+    background: url(../img/sideImage.jpg) no-repeat;
+    width: 36vw;
+    height: 80vh;
+    margin-left: 13vw;
+}
+
+.sideSection {
+    width: 13vw;
+    height: 100vh;
+    background-color: #141414;
+}
+
+.sideSection .side{}
+.sideSection .toFirstPageBtn a{
+    font-family: "Bebas Neue";
+    font-size: 3vw;
+    color: white;
+}
+
+.sideSection .toFirstPageBtn {
+    transform: rotate(90deg) translate(6vw, 3vh);
+}
+
+.sideSection .side h2{
+    font-family: "Bebas Neue";
+    font-size: 9vw;
+    color: white;
+    transform: rotate(90deg) translateX(13vw);
+}
 
 
 
