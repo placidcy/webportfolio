@@ -809,7 +809,7 @@ html.has-scroll-dragging {
 .leftside {}
 .leftside .leftText{
     transform: rotate(90deg);
-    margin-top: 21vh;
+    margin-top: 19vh;
     margin-right: 3vw;
 }
 
@@ -826,7 +826,7 @@ html.has-scroll-dragging {
 }
 
 .descBox .contactDesc{
-    margin-bottom: 45vh;
+    margin-bottom: 47vh;
 }
 
 .descBox .contactDesc .title{
@@ -861,7 +861,7 @@ html.has-scroll-dragging {
 #section6 .descBox .img{
     background: url(../img/contactImg.jpg) no-repeat;
     width: 36vw;
-    height: 80vh;
+    height: 83vh;
     margin-left: 13vw;
 }
 
