@@ -801,6 +801,7 @@ html.has-scroll-dragging {
 #section6 {
     position: relative;
     display: flex;
+    width: 100vw;
     height: 100vh;
     background-color: #F1E0DB;
 }
@@ -818,7 +819,7 @@ html.has-scroll-dragging {
 }
 
 #section6 .descBox {
-    width: 65vw;
+    width: 75vw;
     height: 100%;
     display: flex;
     align-items: flex-end;
@@ -858,7 +859,7 @@ html.has-scroll-dragging {
 
 
 #section6 .descBox .img{
-    background: url(../img/sideImage.jpg) no-repeat;
+    background: url(../img/contactImg.jpg) no-repeat;
     width: 36vw;
     height: 80vh;
     margin-left: 13vw;
