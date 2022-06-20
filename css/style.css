@@ -800,13 +800,236 @@ html.has-scroll-dragging {
 /* section6(contact) */
 #section6 {
     position: relative;
-    display: flex;
-    width: 80vw;
     height: 100vh;
     background-color: #F1E0DB;
 }
 
-.leftside {}
+.contact_Contents {
+    display: flex;
+}
+
+.contact_Contents .location {
+    text-align: left;
+}
+
+/* location */
+.location {
+    background-color: #FFD395;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.location .desc {
+    margin-left: 150px;
+    padding-bottom: 145px;
+    position: relative;
+}
+
+.location iframe {
+    margin-left: 120px;
+    margin-bottom: 100px;
+}
+
+.location .sideText {
+    font-size: 11px;
+    font-family:'Saira Condensed';
+    position: absolute;
+    transform: rotate(90deg);
+    top: 0;
+    left: -3.8vw;
+    letter-spacing: -0.07em;
+}
+
+.location .title {
+    font-size: 15rem;
+    font-family: "Bebas Neue";
+    line-height: 0.82;
+    text-transform: uppercase;
+}
+
+.location .contact_intro {
+    font-family: 'PT Sans Narrow';
+    letter-spacing: -0.02em;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.location .contact_location {
+    font-size: 20px;
+    font-family: 'PT Sans Narrow';
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.contact_sideImage {
+    width: 980px;
+    height: 100vh;
+    background: url(../img/sideImage2.jpg) no-repeat;
+}
+
+/* email */
+.emailSection {
+    width: 12.5vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.emailSection .titleBox {
+    margin-left: 53px;
+    padding-bottom: 470px;
+}
+
+.emailSection .email_title {
+    font-size: 11rem;
+    font-family: "Bebas Neue";
+    line-height: 0.2;
+}
+
+.emailSection .email_title2 {
+    font-size: 11rem;
+    font-family: "Bebas Neue";
+}
+
+.emailSection p {
+    font-size: 20px;
+    font-family: 'PT Sans Narrow';
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.emailSection .email_sideTitle {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+}
+
+.emailSection .emailLink a {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.emailSection .email_descBox {
+    margin-right: 100px;
+    width: 700px;
+}
+
+.emailSection .line {
+    height: 1.5px;
+    width: 700px;
+    background-color: black;
+    margin: 25px 0;
+}
+
+/* oterInfo */
+.otherInfo {
+    width: 80vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.otherInfo_sideText1 {
+    color: white;
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    transform: rotate(90deg) translateX(-50px);
+    position: absolute;
+    left: 80px;
+    top: 180px;
+}
+
+.otherInfo_sideText2 {
+    color: white;
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    position: absolute;
+    left: 125px;
+    top: 100px;
+}
+
+.otherInfo .title {
+    color: white;
+    font-size: 170px;
+    font-family: "Bebas Neue";
+    margin-left: 200px;
+    margin-top: 150px;
+    line-height: 1.0;
+}
+
+.otherInfo_imageBox {
+    display: flex;
+    padding-left: 185px;
+    height: 200px;
+}
+
+.otherInfo .imgs {
+    margin: 0 15px;
+}
+
+.otherInfo_imageBox .img1 {
+    width: 250px;
+    height: 200px;
+    background: url(../img/otherInfo_image1.jpg);
+}
+
+.otherInfo_imageBox .img2 {
+    width: 250px;
+    height: 200px;
+    background: url(../img/otherInfo_image2.jpg);
+}
+
+.otherInfo_imageBox .img3 {
+    width: 250px;
+    height: 200px;
+    background: url(../img/otherInfo_image3.jpg);
+}
+
+.otherInfo_imageBox .img4 {
+    width: 250px;
+    height: 200px;
+    background: url(../img/otherInfo_image4.jpg);
+}
+
+.otherSites {
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+.otherSites a img {
+    vertical-align: middle;
+}
+
+.otherSites .otherSites_title {
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    color: white;
+}
+
+.otherSites .line {
+    height: 1px;
+    width: 700px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.otherSites .linkText {
+    color: white;
+    font-size: 18px;
+    font-family: "Bebas Neue";
+}
+
+.otherSites a {
+    text-decoration: none;
+}
+
+/* .leftside {}
 .leftside .leftText{
     transform: rotate(90deg);
     margin-top: 19vh;
@@ -887,7 +1110,7 @@ html.has-scroll-dragging {
     font-size: 9vw;
     color: white;
     transform: rotate(90deg) translateX(13vw);
-}
+} */
 
 
 
