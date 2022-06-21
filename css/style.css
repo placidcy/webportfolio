@@ -815,7 +815,7 @@ html.has-scroll-dragging {
 /* location */
 .location {
     background-color: #FFD395;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     position: relative;
     display: flex;
@@ -839,8 +839,8 @@ html.has-scroll-dragging {
     font-family:'Saira Condensed';
     position: absolute;
     transform: rotate(90deg);
-    top: 0;
-    left: -3.8vw;
+    top: 1vh;
+    left: -2.2vw;
     letter-spacing: -0.07em;
 }
 
@@ -867,82 +867,99 @@ html.has-scroll-dragging {
 }
 
 .contact_sideImage {
-    width: 980px;
-    height: 100vh;
-    background: url(../img/sideImage2.jpg) no-repeat;
+    width: 646px;
+    height: 1080px;
+    background: url(../img/sideImage1.jpg) no-repeat;
 }
 
 /* email */
 .emailSection {
-    width: 12.5vw;
+    width: 60vw;
     height: 100vh;
     display: flex;
     align-items: flex-end;
 }
 
+.emailSection .emailContents {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 183px;
+    padding-right: 276px;
+}
+
 .emailSection .titleBox {
-    margin-left: 53px;
+    margin-right: 53px;
     padding-bottom: 470px;
 }
 
 .emailSection .email_title {
     font-size: 11rem;
     font-family: "Bebas Neue";
-    line-height: 0.2;
+    line-height: 0.84;
 }
 
 .emailSection .email_title2 {
     font-size: 11rem;
     font-family: "Bebas Neue";
+    line-height: 0.84;
 }
 
 .emailSection p {
-    font-size: 20px;
+    font-size: 1.2vw;
     font-family: 'PT Sans Narrow';
     text-align: left;
-    margin-bottom: 60px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 .emailSection .email_sideTitle {
+    display: inline-block;
     font-family: "Bebas Neue";
     font-size: 20px;
+    margin-top: 53px;
+    margin-bottom: 16px;
 }
 
 .emailSection .emailLink a {
     font-family: "Bebas Neue";
+    display: block;
     font-size: 20px;
     text-decoration: none;
     color: black;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid;
 }
 
 .emailSection .email_descBox {
-    margin-right: 100px;
-    width: 700px;
+    padding-bottom: 224px;
 }
 
 .emailSection .line {
-    height: 1.5px;
+    /* height: 1.5px;
     width: 700px;
-    background-color: black;
-    margin: 25px 0;
+    background-color: black; */
 }
 
 /* oterInfo */
 .otherInfo {
-    width: 80vw;
+    width: 45.5vw;
     height: 100vh;
     background-color: black;
     position: relative;
+}
+
+.otherInfo .InfoContents {
+    display: flex;
+    align-items: flex-end;
 }
 
 .otherInfo_sideText1 {
     color: white;
     font-size: 20px;
     font-family: "Bebas Neue";
-    transform: rotate(90deg) translateX(-50px);
+    transform: rotate(90deg);
     position: absolute;
-    left: 80px;
-    top: 180px;
 }
 
 .otherInfo_sideText2 {
@@ -950,8 +967,8 @@ html.has-scroll-dragging {
     font-size: 20px;
     font-family: "Bebas Neue";
     position: absolute;
-    left: 125px;
-    top: 100px;
+    left: -43px;
+    top: -43px;
 }
 
 .otherInfo .title {
