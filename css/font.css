@@ -68,3 +68,9 @@
     font-family: "TTtrailersVariable";
     src: url(../font/TTTrailers-Variable.ttf);
 }
+
+@font-face {
+    font-family: "TTtrailersRegular";
+    src: url(../font/TTTrailers-Regular.ttf);
+}
+

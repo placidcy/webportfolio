@@ -976,9 +976,10 @@ html.has-scroll-dragging {
 .otherInfo .title {
     color: white;
     font-size: 134px;
-    font-family: "TTtrailersVariable";
+    font-family: "TTtrailersRegular";
     line-height: 0.84;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .otherInfo_imageBox {
