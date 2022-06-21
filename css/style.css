@@ -946,9 +946,9 @@ html.has-scroll-dragging {
     width: 45.5vw;
     height: 100vh;
     background-color: black;
-    position: relative;
     display: flex;
     align-items: flex-end;
+    position: relative;
 }
 
 .otherInfo .InfoContents {
@@ -958,65 +958,67 @@ html.has-scroll-dragging {
 
 .otherInfo_sideText1 {
     color: white;
-    font-size: 10px;
-    font-family: "Bebas Neue";
+    font-size: 11px;
     transform: rotate(90deg);
     position: absolute;
-    left: 43px;
-    top: 43px;
+    left: 45px;
+    top: 215px;
 }
 
 .otherInfo_sideText2 {
     color: white;
-    font-size: 10px;
-    font-family: "Bebas Neue";
+    font-size: 11px;
     position: absolute;
-    left: 43px;
-    top: 43px;
+    left: 85px;
+    top: 145px;
 }
 
 .otherInfo .title {
     color: white;
     font-size: 134px;
-    font-family: "Bebas Neue";
-    line-height: 1.0;
+    font-family: "TTtrailersVariable";
+    line-height: 0.84;
+    text-transform: uppercase;
 }
 
 .otherInfo_imageBox {
     display: flex;
+    margin-top: 26px;
 }
 
 .otherInfo .imgs {
+    margin-right: 15px;
 }
 
 .otherInfo_imageBox .img1 {
-    width: 175px;
-    height: 175px;
+    width: 174.95px;
+    height: 174.95px;
     background: url(../img/otherInfo_image1.jpg);
 }
 
 .otherInfo_imageBox .img2 {
-    width: 175px;
-    height: 175px;
+    width: 174.95px;
+    height: 174.95px;
     background: url(../img/otherInfo_image2.jpg);
 }
 
 .otherInfo_imageBox .img3 {
-    width: 175px;
-    height: 175px;
+    width: 174.95px;
+    height: 174.95px;
     background: url(../img/otherInfo_image3.jpg);
 }
 
 .otherInfo_imageBox .img4 {
-    width: 175px;
-    height: 175px;
+    width: 174.95px;
+    height: 174.95px;
     background: url(../img/otherInfo_image4.jpg);
 }
 
 .otherSites {
+    margin-top: 44px;
 }
 
-.otherSites a img {
+.otherSites a div {
     vertical-align: middle;
 }
 
@@ -1024,6 +1026,7 @@ html.has-scroll-dragging {
     font-size: 20px;
     font-family: "Bebas Neue";
     color: white;
+    margin-bottom: 25px;
 }
 
 .otherSites .line {
@@ -1041,6 +1044,46 @@ html.has-scroll-dragging {
 
 .otherSites a {
     text-decoration: none;
+}
+
+.react .img {
+    background-image: url(../icon/Link.jpg);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.react a {
+    display: inline-block;
+    border-top: 1px solid white;
+    padding: 16px 0;
+}
+
+.vue .img {
+    background-image: url(../icon/Link.jpg);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.vue a {
+    display: inline-block;
+    border-top: 1px solid white;
+    padding: 16px 0;
+}
+
+
+.github .img {
+    background-image: url(../icon/Github.jpg);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.github a {
+    display: inline-block;
+    border-top: 1px solid white;
+    padding: 16px 0;
 }
 
 /* .leftside {}

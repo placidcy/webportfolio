@@ -347,7 +347,8 @@
                             <p class="otherInfo_sideText1">KEEP UP TO DATE</p>
                             <p class="otherInfo_sideText2">KEEP UP TO DATE</p>
 
-                            <h2 class="title">latest from the<br>develop</h2>
+                            <h2 class="title">latest from the</h2>
+                            <h2 class="title">develop</h2>
 
                             <div class="otherInfo_imageBox">
                                 <div class="img1 imgs"></div>
@@ -359,26 +360,23 @@
                             <div class="otherSites">
                                 <h2 class="otherSites_title">OTHER SITES</h2>
 
-                                <div class="line"></div>
                                 <div class="react">
                                     <a href="https://reactsites.netlify.app" target="_blank">
-                                        <img src="./icons/Link.jpg" alt="react 이미지" width="25" height="0">
+                                        <div class="img"></div>
                                         <span class="linkText">REACT</span>
                                     </a>
                                 </div>
 
-                                <div class="line"></div>
                                 <div class="vue">
-                                    <a href="#">
-                                        <img src="./icons/Link.jpg" alt="react 이미지" width="25" height="0">
+                                    <a href="#" target="_blank">
+                                        <div class="img"></div>
                                         <span class="linkText">VUE</span>
                                     </a>
                                 </div>
 
-                                <div class="line"></div>
                                 <div class="github">
                                     <a href="https://github.com/placidcy?tab=repositories" target="_blank">
-                                        <img src="./icons/Github.jpg" alt="react 이미지" width="25" height="0">
+                                        <div class="img"></div>
                                         <span class="linkText">GITHUB</span>
                                     </a>
                                 </div>
@@ -390,14 +388,15 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
     <script type="text/javascript">
         var s = skrollr.init({
             smoothScrolling: true
         });
-        window.addEventListener("scroll", () => {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
-            document.querySelector(".scroll").innerText = Math.round(scrollTop);
-        })
+        // window.addEventListener("scroll", () => {
+        //     let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
+        //     document.querySelector(".scroll").innerText = Math.round(scrollTop);
+        // })
         gsap.set(".sec1_tit h1", {
             opacity: 0,
             y: 50
