@@ -962,7 +962,7 @@ html.has-scroll-dragging {
     transform: rotate(90deg);
     position: absolute;
     left: 45px;
-    top: 215px;
+    top: 225px;
 }
 
 .otherInfo_sideText2 {
@@ -970,16 +970,15 @@ html.has-scroll-dragging {
     font-size: 11px;
     position: absolute;
     left: 85px;
-    top: 145px;
+    top: 155px;
 }
 
 .otherInfo .title {
     color: white;
-    font-size: 134px;
-    font-family: "TTtrailersRegular";
+    font-size: 135px;
+    font-family: "TTtrailersBold";
     line-height: 0.84;
     text-transform: uppercase;
-    font-weight: 400;
 }
 
 .otherInfo_imageBox {
@@ -1017,6 +1016,7 @@ html.has-scroll-dragging {
 
 .otherSites {
     margin-top: 44px;
+    max-width: 345px;
 }
 
 .otherSites a div {
@@ -1024,10 +1024,12 @@ html.has-scroll-dragging {
 }
 
 .otherSites .otherSites_title {
-    font-size: 20px;
-    font-family: "Bebas Neue";
+    font-size: 24px;
+    font-family: "TTtrailersVariable";
     color: white;
     margin-bottom: 25px;
+    line-height: 1.2;
+    font-weight: 64;
 }
 
 .otherSites .line {
@@ -1047,6 +1049,9 @@ html.has-scroll-dragging {
     text-decoration: none;
 }
 
+.react {
+}
+
 .react .img {
     background-image: url(../icon/Link.jpg);
     width: 25px;
@@ -1058,6 +1063,7 @@ html.has-scroll-dragging {
     display: inline-block;
     border-top: 1px solid white;
     padding: 16px 0;
+    width: 100%;
 }
 
 .vue .img {
@@ -1071,6 +1077,7 @@ html.has-scroll-dragging {
     display: inline-block;
     border-top: 1px solid white;
     padding: 16px 0;
+    width: 100%;
 }
 
 
@@ -1085,6 +1092,7 @@ html.has-scroll-dragging {
     display: inline-block;
     border-top: 1px solid white;
     padding: 16px 0;
+    width: 100%;
 }
 
 /* .leftside {}

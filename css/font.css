@@ -74,3 +74,9 @@
     src: url(../font/TTTrailers-Regular.ttf);
 }
 
+@font-face {
+    font-family: "TTtrailersBold";
+    src: url(../font/TTTrailers-Bold.ttf);
+}
+
+
