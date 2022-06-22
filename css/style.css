@@ -905,24 +905,26 @@ html.has-scroll-dragging {
 }
 
 .emailSection p {
-    font-size: 1.2vw;
+    font-size: 22px;
     font-family: 'PT Sans Narrow';
     text-align: left;
     line-height: 1.2;
     letter-spacing: -0.02em;
+    font-weight: 300;
 }
 
 .emailSection .email_sideTitle {
     display: inline-block;
-    font-family: "Bebas Neue";
-    font-size: 20px;
+    font-family: "TTtrailersVariable";
+    font-size: 24px;
     margin-top: 53px;
     margin-bottom: 16px;
 }
 
 .emailSection .emailLink a {
-    font-family: "Bebas Neue";
+    font-family: "TTtrailersVariable";
     display: block;
+    display: flex;
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -931,14 +933,21 @@ html.has-scroll-dragging {
     border-top: 1px solid;
 }
 
-.emailSection .email_descBox {
-    padding-bottom: 224px;
+.emailSection .emailLink .text {
+    font-family: "TTtrailersBold";
+    font-size: 17px;
+    line-height: 1;
 }
 
-.emailSection .line {
-    /* height: 1.5px;
-    width: 700px;
-    background-color: black; */
+.emailSection .emailLink .img {
+    background: url(../icon/emailIcon.jpg) no-repeat;
+    width: 14px;
+    height: 11px;
+    margin-right: 14px;
+}
+
+.emailSection .email_descBox {
+    padding-bottom: 224px;
 }
 
 /* oterInfo */
@@ -1041,9 +1050,10 @@ html.has-scroll-dragging {
 
 .otherSites .linkText {
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "TTtrailersVariable";
     font-weight: bold;
+    line-height: 1.2;
 }
 
 .otherSites a {
