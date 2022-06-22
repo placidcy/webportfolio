@@ -852,7 +852,7 @@ html.has-scroll-dragging {
 }
 
 .location .contact_intro {
-    font-family: 'Oswald';
+    font-family: 'IropkeBatang';
     letter-spacing: -0.02em;
     font-size: 22px;
     font-weight: normal;
@@ -951,6 +951,11 @@ html.has-scroll-dragging {
 .emailSection .email_descBox {
     padding-bottom: 224px;
 }
+
+.emailSection .email_descBox p {
+    font-family: 'IropkeBatang';
+}
+
 
 /* oterInfo */
 .otherInfo {
