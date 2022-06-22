@@ -64,6 +64,7 @@
 /* font-family: 'Saira Condensed' */
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500&display=swap');
 
+/* TTtrailers */
 @font-face {
     font-family: "TTtrailersVariable";
     src: url(../font/TTTrailers-Variable.ttf);
@@ -83,5 +84,24 @@
     font-family: "TTtrailersMedium";
     src: url(../font/TTTrailers-Medium.ttf);
 }
+
+/* GT america font */
+@font-face {
+    font-family: "GTamericaBoldItalic";
+    src: url(../font/GT\ America\ Bold\ Italic.ttf);
+}
+
+@font-face {
+    font-family: "GTamericaBold";
+    src: url(../font/GT\ America\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "GTamericaRegular";
+    src: url(../font/GT\ America\ Regular.ttf);
+}
+
+/* font-family: 'Oswald' */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 
 

@@ -820,13 +820,13 @@ html.has-scroll-dragging {
     position: relative;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-start;
 }
 
 .location .desc {
     margin-left: 150px;
     padding-bottom: 145px;
     position: relative;
+    max-width: 364px;
 }
 
 .location iframe {
@@ -852,18 +852,18 @@ html.has-scroll-dragging {
 }
 
 .location .contact_intro {
-    font-family: 'PT Sans Narrow';
+    font-family: 'Oswald';
     letter-spacing: -0.02em;
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: normal;
     line-height: 1.2;
 }
 
 .location .contact_location {
-    font-size: 20px;
-    font-family: 'PT Sans Narrow';
+    font-size: 22px;
+    font-family: 'Oswald';
     margin-top: 20px;
-    font-size: 1.6rem;
+    font-size: 20px;
 }
 
 .contact_sideImage {
@@ -916,7 +916,7 @@ html.has-scroll-dragging {
 }
 
 .emailSection .email_sideTitle {
-    display: inline-block;
+    display: block;
     font-family: "TTtrailersVariable";
     font-size: 24px;
     margin-top: 53px;
