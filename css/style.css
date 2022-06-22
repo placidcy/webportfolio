@@ -861,9 +861,11 @@ html.has-scroll-dragging {
 
 .location .contact_location {
     font-size: 22px;
-    font-family: 'Oswald';
+    font-family: 'GTamericaRegular';
     margin-top: 20px;
     font-size: 20px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 .contact_sideImage {
