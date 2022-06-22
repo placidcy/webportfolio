@@ -1041,8 +1041,9 @@ html.has-scroll-dragging {
 
 .otherSites .linkText {
     color: white;
-    font-size: 18px;
-    font-family: "Bebas Neue";
+    font-size: 20px;
+    font-family: "TTtrailersVariable";
+    font-weight: bold;
 }
 
 .otherSites a {
@@ -1053,9 +1054,9 @@ html.has-scroll-dragging {
 }
 
 .react .img {
-    background-image: url(../icon/Link.jpg);
-    width: 25px;
-    height: 25px;
+    background: url(../icon/Link.jpg) no-repeat;
+    width: 14px;
+    height: 15px;
     display: inline-block;
 }
 
@@ -1067,9 +1068,9 @@ html.has-scroll-dragging {
 }
 
 .vue .img {
-    background-image: url(../icon/Link.jpg);
-    width: 25px;
-    height: 25px;
+    background: url(../icon/Link.jpg) no-repeat;
+    width: 14px;
+    height: 15px;
     display: inline-block;
 }
 
@@ -1082,9 +1083,9 @@ html.has-scroll-dragging {
 
 
 .github .img {
-    background-image: url(../icon/Github.jpg);
-    width: 25px;
-    height: 25px;
+    background: url(../icon/Github.jpg) no-repeat;
+    width: 14px;
+    height: 15px;
     display: inline-block;
 }
 
