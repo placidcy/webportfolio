@@ -893,15 +893,17 @@ html.has-scroll-dragging {
 }
 
 .emailSection .email_title {
-    font-size: 11rem;
-    font-family: "Bebas Neue";
+    font-size: 160px;
+    font-family: "TTtrailersBold";
     line-height: 0.84;
+    font-variation-settings: "wght" 110;
 }
 
 .emailSection .email_title2 {
-    font-size: 11rem;
-    font-family: "Bebas Neue";
+    font-size: 160px;
+    font-family: "TTtrailersBold";
     line-height: 0.84;
+    font-variation-settings: "wght" 110;
 }
 
 .emailSection p {
@@ -1051,16 +1053,12 @@ html.has-scroll-dragging {
 .otherSites .linkText {
     color: white;
     font-size: 17px;
-    font-family: "TTtrailersVariable";
-    font-weight: bold;
+    font-family: "TTtrailersBold";
     line-height: 1.2;
 }
 
 .otherSites a {
     text-decoration: none;
-}
-
-.react {
 }
 
 .react .img {
