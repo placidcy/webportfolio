@@ -854,9 +854,10 @@ html.has-scroll-dragging {
 .location .contact_intro {
     font-family: 'IropkeBatang';
     letter-spacing: -0.02em;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: normal;
     line-height: 1.2;
+    white-space: normal;
 }
 
 .location .contact_location {
@@ -951,12 +952,14 @@ html.has-scroll-dragging {
 }
 
 .emailSection .email_descBox {
-    padding-bottom: 224px;
+    padding-bottom: 200px;
     max-width: 358px;
 }
 
 .emailSection .email_descBox p {
+    font-size: 18px;
     font-family: 'IropkeBatang';
+    white-space: pre-line;
 }
 
 
