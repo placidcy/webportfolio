@@ -418,7 +418,7 @@
 
         var mapOptions = {
             center: new naver.maps.LatLng(37.29116419999998, 126.84192090000015),
-            zoom: 10
+            zoom: 15
         };
 
         var map = new naver.maps.Map(naverMap, mapOptions);
@@ -426,14 +426,14 @@
 
     <script type="text/javascript">
         // 요소 불러오기
-        const mainTag = document.querySelector("[data-scroll-container]");
         const scrollValue = document.querySelector(".scrollValue span");
 
         // locomotive x값 불러오기
-        let mainTagStyle = window.getComputedStyle(mainTag, null);
-        let mainTagMatrix = new WebKitCSSMatrix(mainTagStyle.transform);
+        const mainTag = document.querySelector("[data-scroll-container]");
+        let mainTagStyle = window.getComputedStyle(mainTag);
 
         window.addEventListener("scroll", function() {
+            let mainTagMatrix = new WebKitCSSMatrix(mainTagStyle.transform);
             // let scroll = window.scrollY || document.documentElement.scrollTop || window.pageYOffset;
             scrollValue.innerText = mainTagMatrix.m41;
             console.log(scrollValue.innerText);

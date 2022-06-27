@@ -332,7 +332,6 @@ html.has-scroll-dragging {
     padding: 1%;
     white-space: normal;
     text-align: justify;
-    overflow-y: scroll;
 }
 
 .about_box .about2 h3 {
@@ -352,7 +351,6 @@ html.has-scroll-dragging {
     padding: 1%;
     white-space: normal;
     text-align: justify;
-    overflow-y: scroll;
     color: #fff;
     font-family: 'IropkeBatang';
 }
@@ -382,7 +380,6 @@ html.has-scroll-dragging {
     padding: 1%;
     white-space: normal;
     text-align: justify;
-    overflow-y: scroll;
     color: #fff;
     font-family: 'IropkeBatang';
 }
