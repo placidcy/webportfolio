@@ -393,7 +393,9 @@
                     </div>
             </section>
         </div>
+
     </main>
+    <div class="scrollValue">스크롤 값 : <span></span></div>
 
     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c3fc78d25fc47899b7d12e5a22ac07a5"> -->
     <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=g1io13ezi9">
@@ -423,10 +425,25 @@
     </script>
 
     <script type="text/javascript">
+        // 요소 불러오기
+        const mainTag = document.querySelector("[data-scroll-container]");
+        const scrollValue = document.querySelector(".scrollValue span");
+
+        // locomotive x값 불러오기
+        let mainTagStyle = window.getComputedStyle(mainTag, null);
+        let mainTagMatrix = new WebKitCSSMatrix(mainTagStyle.transform);
+
+        window.addEventListener("scroll", function() {
+            // let scroll = window.scrollY || document.documentElement.scrollTop || window.pageYOffset;
+            scrollValue.innerText = mainTagMatrix.m41;
+            console.log(scrollValue.innerText);
+        });
+
         var s = skrollr.init({
             smoothScrolling: true
         });
 
+        // gsap set
         gsap.set(".sec1_tit h1", {
             opacity: 0,
             y: 50

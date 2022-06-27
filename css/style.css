@@ -1122,6 +1122,12 @@ html.has-scroll-dragging {
     margin-bottom: 10vh;
 }
 
+.scrollValue {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
 /* .leftside {}
 .leftside .leftText{
     transform: rotate(90deg);
