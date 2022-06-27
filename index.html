@@ -431,12 +431,10 @@
         // 요소 불러오기
         const scrollValue = document.querySelector(".scrollValue span");
 
-        // locomotive x값 불러오기
-        const mainTag = document.querySelector("[data-scroll-container]");
-        let mainTagStyle = window.getComputedStyle(mainTag);
-        let mainTagMatrix = new WebKitCSSMatrix(mainTagStyle.transform);
-        // let scroll = window.scrollY || document.documentElement.scrollTop || window.pageYOffset;
-        scrollValue.innerText = mainTagMatrix.m41;
+        window.addEventListener("scroll", function () {
+            let scroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+            scrollValue.innerText = Math.round(scroll);
+        });
 
         var s = skrollr.init({
             smoothScrolling: true
@@ -562,7 +560,7 @@
                 rotation: 0,
                 ease: "power3.out"
             }, "2")
-        }, 2000)
+        }, 2000);
     </script>
 </body>
 
