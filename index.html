@@ -411,6 +411,13 @@
             smooth: true,
             direction: "horizontal"
         });
+
+        const box1 = document.querySelector(".sec1_menu .box1");
+        const testTarget = document.querySelector("#section6");
+
+        box1.addEventListener("click", () => {
+            lscroll.scrollTo(testTarget);
+        });
     </script>
 
     <script>
@@ -431,10 +438,16 @@
         // 요소 불러오기
         const scrollValue = document.querySelector(".scrollValue span");
 
-        window.addEventListener("scroll", function () {
-            let scroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-            scrollValue.innerText = Math.round(scroll);
-        });
+        const mainTagElement = document.querySelector("[data-scroll-container]");
+
+        // let mainTagStyle = window.getComputedStyle(mainTagElement, null);
+        // let mainTagMatrix = new WebKitCSSMatrix(mainTagStyle.transform);
+        // window.addEventListener("scroll", function () {
+        //     let scroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+        //     scrollValue.innerText = Math.round(scroll);
+        // });
+
+
 
         var s = skrollr.init({
             smoothScrolling: true
