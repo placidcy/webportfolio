@@ -751,7 +751,7 @@ html.has-scroll-dragging {
     font-size: 9vw;
 }
 
-.cardGame .descSide{
+.cardGame .descSide {
     width: 20%;
     white-space: normal;
 }
@@ -836,7 +836,7 @@ html.has-scroll-dragging {
 
 .location .sideText {
     font-size: 11px;
-    font-family:'Saira Condensed';
+    font-family: 'Saira Condensed';
     position: absolute;
     transform: rotate(90deg);
     top: 1vh;
@@ -899,14 +899,14 @@ html.has-scroll-dragging {
     font-size: 160px;
     font-family: "TTtrailersBold";
     line-height: 0.84;
-    font-variation-settings: "wght" 110;
+    font-variation-settings: "wght"110;
 }
 
 .emailSection .email_title2 {
     font-size: 160px;
     font-family: "TTtrailersBold";
     line-height: 0.84;
-    font-variation-settings: "wght" 110;
+    font-variation-settings: "wght"110;
 }
 
 .emailSection p {
@@ -1115,6 +1115,13 @@ html.has-scroll-dragging {
     width: 100%;
 }
 
+#section6 .navermap {
+    width: 667px;
+    height: 700px;
+    margin-left: 20vw;
+    margin-bottom: 10vh;
+}
+
 /* .leftside {}
 .leftside .leftText{
     transform: rotate(90deg);
@@ -1197,6 +1204,3 @@ html.has-scroll-dragging {
     color: white;
     transform: rotate(90deg) translateX(13vw);
 } */
-
-
-
