@@ -395,6 +395,7 @@
         </div>
 
     </main>
+
     <div class="scrollValue">스크롤 값 : <span></span></div>
 
     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c3fc78d25fc47899b7d12e5a22ac07a5"> -->
@@ -441,18 +442,15 @@
         const mainTag = document.querySelector("[data-scroll-container]");
         let mainTagStyle = window.getComputedStyle(mainTag);
         let mainTagMatrix = new WebKitCSSMatrix(mainTagStyle.transform);
-
-        window.addEventListener("scroll", function() {
-            // let scroll = window.scrollY || document.documentElement.scrollTop || window.pageYOffset;
-            scrollValue.innerText = mainTagMatrix.m41;
-            console.log(scrollValue.innerText);
-        });
+        // let scroll = window.scrollY || document.documentElement.scrollTop || window.pageYOffset;
+        scrollValue.innerText = mainTagMatrix.m41;
 
         var s = skrollr.init({
             smoothScrolling: true
         });
 
         // gsap set
+        // 메인페이지
         gsap.set(".sec1_tit h1", {
             opacity: 0,
             y: 50
@@ -501,6 +499,8 @@
             y: 230,
             rotation: 210
         })
+
+        // 메인페이지 애니메이션
         setTimeout(() => {
             const tl = gsap.timeline();
             tl.to(".sec1_tit h1", {
