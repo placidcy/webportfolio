@@ -413,10 +413,29 @@
         });
 
         const box1 = document.querySelector(".sec1_menu .box1");
-        const testTarget = document.querySelector("#section6");
+        const box2 = document.querySelector(".sec1_menu .box2");
+        const box3 = document.querySelector(".sec1_menu .box3");
+        const box4 = document.querySelector(".sec1_menu .box4");
+
+        const box1_Section = document.querySelector("#section2");
+        const box2_Section = document.querySelector("#section3");
+        const box3_Section = document.querySelector("#section4");
+        const box4_Section = document.querySelector("#section5");
 
         box1.addEventListener("click", () => {
-            lscroll.scrollTo(testTarget);
+            lscroll.scrollTo(box1_Section);
+        });
+
+        box2.addEventListener("click", () => {
+            lscroll.scrollTo(box2_Section);
+        });
+
+        box3.addEventListener("click", () => {
+            lscroll.scrollTo(box3_Section);
+        });
+
+        box4.addEventListener("click", () => {
+            lscroll.scrollTo(box4_Section);
         });
     </script>
 
