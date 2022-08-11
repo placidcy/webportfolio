@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <main data-scroll-container>
+    <main id="main" data-scroll-container>
         <div id="contents">
             <!-- section1 -->
             <section id="section1">
@@ -396,7 +396,7 @@
 
     </main>
 
-    <div class="scrollValue">스크롤 값 : <span></span></div>
+    <!-- <div class="scrollValue">스크롤 값 : <span></span></div> -->
 
     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c3fc78d25fc47899b7d12e5a22ac07a5"> -->
 
@@ -410,6 +410,10 @@
             el: document.querySelector("[data-scroll-container]"),
             smooth: true,
             direction: "horizontal"
+        });
+
+        window.addEventListener("scroll", function () {
+            console.log(lscroll.scroll.instance.scroll.x);
         });
 
         const box1 = document.querySelector(".sec1_menu .box1");
@@ -442,8 +446,6 @@
     <script>
         const naverMap = document.querySelector("#section6 .navermap"); //지도를 담을 영역의 DOM 레퍼런스
 
-        console.log(naverMap);
-
         //지도를 생성할 때 필요한 기본 옵션
         var mapOptions = {
             center: new naver.maps.LatLng(37.29116419999998, 126.84192090000015),
@@ -457,14 +459,11 @@
         // 요소 불러오기
         const scrollValue = document.querySelector(".scrollValue span");
 
-        const mainTagElement = document.querySelector("[data-scroll-container]");
+        // let scroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
 
-        // let mainTagStyle = window.getComputedStyle(mainTagElement, null);
-        // let mainTagMatrix = new WebKitCSSMatrix(mainTagStyle.transform);
-        // window.addEventListener("scroll", function () {
-        //     let scroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-        //     scrollValue.innerText = Math.round(scroll);
-        // });
+        window.addEventListener("scroll", function () {
+          
+        });
 
 
         var s = skrollr.init({
