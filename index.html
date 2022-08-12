@@ -46,7 +46,7 @@
             <!-- //section2 -->
             <section id="section2">
                 <div class="menu_box">
-                    <div class="about active"><span>about</span><em>저에 대한 소개 페이지입니다<br>
+                    <div class="about active "><span>about</span><em>저에 대한 소개 페이지입니다<br>
                             프로그래밍 언어에 관심을 가지고 흥미를 느낀 이유, 웹 개발에 관심을 가진 이유를 작성했습니다</em></div>
                     <div class="site"><span>site</span><em>웹 표준을 기준으로 구현한 사이트, 수업 내용을 정리해놓은 사이트와<br>
                             php, react에 대한 페이지입니다</em></div>
@@ -59,7 +59,7 @@
                     <div class="about1">
                         <div class="img"></div>
                     </div>
-                    <div class="about2">
+                    <div class="about2 ">
                         <h3>프로그래밍 언어에 관심을 가지다</h3>
                         <p>컴퓨터 개발 언어에 관심을 가지게 된 이유는 처음으로 그래픽 카드와 CPU 부품을 직접 구입하여 장착했을때부터 시작되었습니다 단순히 부품을 교체하는 일이였고 컴퓨터에
                             대해 전혀 몰랐었지만 직접 웹사이트에서 검색하면서 영상을 찾아보고 따라 하면서 조립을 하였고 제대로 동작했을때 흥미를 느꼈습니다 조립을 하면서 CPU, 메모리 등
@@ -71,7 +71,7 @@
                         <p>변수, 매개변수, 함수, 가상 함수 등 C언어의 용어에 대한 내용과 문법을 배웠는데 다른 사람들과 마찬가지로 저도 뜻을 이해하기 어려웠고 정확한 용어의 뜻을 알고
                             싶어서 사이트 검색을 통해 찾은 내용과 교수님의 설명과 관계지어서 이해하려고 노력했습니다.</p>
                     </div>
-                    <div class="about3">
+                    <div class="about3 ">
                         <h3>프로그래밍에 대해 흥미를 느끼다.</h3>
                         <p>
                             프로그래밍 언어를 배우면서 주어진 문제에 대한 기능을 구현하고 코드를 보면서 이 문제에 대한 언어의 문법을 사용한 이유에 대해서 찾아보게 되었고 그 과정에서
@@ -352,8 +352,8 @@
 
                     <div class="otherInfo">
                         <div class="InfoContents">
-                            <p class="otherInfo_sideText1">KEEP UP TO DATE</p>
-                            <p class="otherInfo_sideText2">KEEP UP TO DATE</p>
+                            <span class="otherInfo_sideText1">KEEP UP TO DATE</span>
+                            <span class="otherInfo_sideText2">KEEP UP TO DATE</span>
 
                             <h2 class="title">latest from the</h2>
                             <h2 class="title">develop</h2>
@@ -417,46 +417,204 @@
         const box3 = document.querySelector(".sec1_menu .box3");
         const box4 = document.querySelector(".sec1_menu .box4");
 
-        const box1_Section = document.querySelector("#section2");
-        const box2_Section = document.querySelector("#section3");
-        const box3_Section = document.querySelector("#section4");
-        const box4_Section = document.querySelector("#section5");
+        const box2_Section = document.querySelector("#section2");
+        const box3_Section = document.querySelector("#section3");
+        const box4_Section = document.querySelector("#section4");
+        const box5_Section = document.querySelector("#section5");
 
-        box1.addEventListener("click", () => {
-            lscroll.scrollTo(box1_Section);
+        //about
+        const section2_about = document.querySelector("#section2 .menu_box .about");
+        const about1_Box = document.querySelector(".about_box .about1");
+        const aboutBox_imgs = document.querySelectorAll(".about_box .img");
+        const about2_Box = document.querySelector(".about_box .about2");
+        const about3_Box = document.querySelector(".about_box .about3");
+        const about4_Box = document.querySelector(".about_box .about4");
+
+        const aboutBox_h3 = document.querySelectorAll(".about_box h3");
+        const aboutBox_p = document.querySelectorAll(".about_box p");
+
+        //site
+        const section3_site = document.querySelector("#section3 .menu_box .site");
+
+        const section3_h3 = document.querySelectorAll(".site_box h3");
+        const section3_h4 = document.querySelectorAll(".site_box h4");
+        const section3_p = document.querySelectorAll(".site_box p");
+        const section3_a = document.querySelectorAll(".site_box a");
+        const section3_imgs = document.querySelectorAll(".site_box .right");
+
+        // script
+        const section4_script = document.querySelector("#section4 .menu_box .script");
+        const section4_p = document.querySelectorAll(".gameSection p");
+        const section4_h3 = document.querySelectorAll(".gameSection h3");
+        const section4_a = document.querySelectorAll(".gameSection a");
+        const section4_imgs = document.querySelectorAll(".gameSection .img");
+        console.log(section4_imgs);
+
+        // contact
+        const section5_script = document.querySelector("#section5 .menu_box .contact");
+        const contact_h2 = document.querySelectorAll(".contact_Contents h2");
+        const contact_a = document.querySelectorAll(".contact_Contents a");
+        const contact_p = document.querySelectorAll(".contact_Contents p");
+        const contact_navermap = document.querySelector(".contact_Contents .navermap");
+        const contact_imgs = document.querySelectorAll(".contact_Contents .img");
+        const contact_texts = document.querySelectorAll(".contact_Contents .text");
+        const location_span = document.querySelector(".location span");
+        const email_span = document.querySelector(".emailSection span");
+        const otherInfo_sideText1 = document.querySelector(".otherInfo .otherInfo_sideText1");
+        const otherInfo_sideText2 = document.querySelector(".otherInfo .otherInfo_sideText2");
+        const otherInfo_images = document.querySelectorAll(".otherInfo_imageBox .imgs");
+        const contact_sideImage = document.querySelector("#section6 .contact_sideImage");
+
+        
+        // gsap set 설정
+        // about 페이지
+        gsap.set(section2_about, {
+            height: 0
         });
 
-        box2.addEventListener("click", () => {
-            lscroll.scrollTo(box2_Section);
+        gsap.set(about1_Box, {
+            height: 0
+        })
+
+        gsap.set(aboutBox_imgs, {
+            opacity: 0
         });
 
-        box3.addEventListener("click", () => {
-            lscroll.scrollTo(box3_Section);
+        gsap.set(about2_Box, {
+            height: 0,
         });
 
-        box4.addEventListener("click", () => {
-            lscroll.scrollTo(box4_Section);
+        gsap.set(about3_Box, {
+            height: 0,
         });
-    </script>
 
-    <script>
-        const naverMap = document.querySelector("#section6 .navermap"); //지도를 담을 영역의 DOM 레퍼런스
+        gsap.set(about4_Box, {
+            height: 0,
+        });
 
-        //지도를 생성할 때 필요한 기본 옵션
-        var mapOptions = {
-            center: new naver.maps.LatLng(37.29116419999998, 126.84192090000015),
-            zoom: 15 //지도의 확대, 축소 정도
-        };
+        gsap.set(aboutBox_h3, {
+            x: "-15px",
+            opacity: 0
+        });
 
-        var map = new naver.maps.Map(naverMap, mapOptions); //지도 생성 및 객체 리턴
-    </script>
+        gsap.set(aboutBox_p, {
+            y: "-10px",
+            opacity: 0
+        });
 
-    <script type="text/javascript">
-        // 요소 불러오기
-        const scrollValue = document.querySelector(".scrollValue span");
+        //site 페이지
+        gsap.set(section3_site, {
+            height: 0
+        });
 
-        // let scroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+        gsap.set(section3_h3, {
+            opacity: 0,
+            x: "-15px"
+        });
 
+        gsap.set(section3_h4, {
+            opacity: 0,
+            x: "-15px"
+        });
+
+        gsap.set(section3_p, {
+            opacity: 0,
+            y: "-15px"
+        });
+
+        gsap.set(section3_a, {
+            opacity: 0,
+            x: "-15px"
+        });
+
+        gsap.set(section3_imgs, {
+            height: 0
+        });
+
+        //script 페이지
+        gsap.set(section4_script, {
+            height: 0
+        });
+
+        gsap.set(section4_p, {
+            y: "-15px",
+            opacity: 0
+        });
+
+        gsap.set(section4_h3, {
+            x: "-15px",
+            opacity: 0
+        });
+
+        gsap.set(section4_a, {
+            width: 0,
+            opacity: 0,
+            x: "-15px"
+        });
+
+        gsap.set(section4_imgs, {
+            height: 0
+        });
+
+        // contact 페이지
+        gsap.set(section5_script, {
+            height: 0
+        });
+
+        gsap.set(contact_h2, {
+            x: "-15px",
+            opacity: 0
+        });
+
+        gsap.set(contact_p, {
+            x: "-15px",
+            opacity: 0
+        });
+
+        gsap.set(location_span, {
+            y: "-15px",
+            opacity: 0
+        });
+
+        gsap.set(contact_navermap, {
+            height: 0
+        });
+
+        gsap.set(contact_a, {
+            x: "-15px",
+            opacity: 0
+        });
+
+        gsap.set(contact_imgs, {
+            width: 0
+        });
+
+        gsap.set(contact_sideImage, {
+            height: 0
+        });
+
+        gsap.set(otherInfo_sideText1, {
+            y: "-15px",
+            opacity: 0
+        });
+
+        gsap.set(otherInfo_sideText2, {
+            x: "-15px",
+            opacity: 0
+        });
+
+        gsap.set(otherInfo_images, {
+            width: 0
+        });
+
+        gsap.set(email_span, {
+            x: "-15px",
+            opacity: 0
+        })
+
+
+
+        //첫번째 페이지 애니메이션
         var s = skrollr.init({
             smoothScrolling: true
         });
@@ -582,7 +740,322 @@
                 ease: "power3.out"
             }, "2")
         }, 2000);
+
+        // 애니메이션 실행(스크롤 값 조건)
+        lscroll.on("scroll", instance => {
+            console.log(instance.scroll.x);
+
+            let additionalX = 300;
+
+            if(window.innerWidth > section2_about.getBoundingClientRect().left + additionalX){
+                gsap.to(section2_about, {
+                    height: "40vh",
+                    duration: 0.7
+                })
+            }
+
+            if(window.innerWidth > about1_Box.getBoundingClientRect().left + additionalX){
+                gsap.to(about1_Box, {
+                    height: "60vh",
+                    duration: 0.7
+                })
+            }
+
+            if(window.innerWidth > about2_Box.getBoundingClientRect().left + additionalX){
+                gsap.to(about2_Box, {
+                    height: "70vh",
+                    duration: 0.7
+                })
+            }
+
+            if(window.innerWidth > about3_Box.getBoundingClientRect().left + additionalX){
+                gsap.to(about3_Box, {
+                    height: "80vh",
+                    duration: 0.7
+                })
+            }
+
+            if(window.innerWidth > about4_Box.getBoundingClientRect().left + additionalX){
+                gsap.to(about4_Box, {
+                    height: "45vh",
+                    duration: 0.7
+                })
+            }
+
+            aboutBox_imgs.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        opacity: 1,
+                        delay: 0.3,
+                        duration: 1
+                    })
+                }
+            })
+
+            aboutBox_h3.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        x: 0,
+                        opacity: 1,
+                        delay: 0.3,
+                        duration: 0.7
+                    })
+                }
+            })
+            
+            aboutBox_p.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        y: 0,
+                        opacity: 1,
+                        delay: 0.6,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            // Site
+            if(window.innerWidth > section3_site.getBoundingClientRect().left + additionalX){
+                gsap.to(section3_site, {
+                    height: "40vh",
+                    duration: 0.7
+                })
+            }
+
+            section3_h3.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        x: 0,
+                        opacity: 1,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            section3_h4.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        x: 0,
+                        opacity: 1,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            section3_p.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        y: 0,
+                        opacity: 1,
+                        delay: 0.6,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            section3_a.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        opacity: 1,
+                        delay: 1.0,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            section3_imgs.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        height: "80%",
+                        duration: 1
+                    })
+                }
+            })
+
+            //script
+            if(window.innerWidth > section4_script.getBoundingClientRect().left + additionalX){
+                gsap.to(section4_script, {
+                    height: "40vh",
+                    duration: 0.7
+                })
+            }
+
+            section4_p.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            section4_h3.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        x: 0,
+                        opacity: 1,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            section4_a.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        width: "100%",
+                        opacity: 1,
+                        x: 0,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            section4_imgs.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        height: "100%",
+                        duration: 1
+                    })
+                }
+            })
+
+            // contact
+            if(window.innerWidth > section5_script.getBoundingClientRect().left + additionalX){
+                gsap.to(section5_script, {
+                    height: "40vh",
+                    duration: 0.7
+                })
+            }
+
+            contact_h2.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        x: 0,
+                        opacity: 1,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            contact_p.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        x: 0,
+                        opacity: 1,
+                        delay: 0.6,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            if(window.innerWidth > location_span.getBoundingClientRect().left + additionalX){
+                gsap.to(location_span, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.7
+                })
+            }
+
+            if(window.innerWidth > contact_navermap.getBoundingClientRect().left + additionalX){
+                gsap.to(contact_navermap, {
+                    height: "100%",
+                    duration: 1.2
+                })
+            }
+
+            
+            contact_a.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        x: 0,
+                        opacity: 1,
+                        duration: 0.7
+                    })
+                }
+            })
+
+            contact_imgs.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
+                    gsap.to(ele, {
+                        width: "14px",
+                        duration: 1.2
+                    })
+                }
+            })
+
+            if(window.innerWidth > contact_sideImage.getBoundingClientRect().left + additionalX){
+                gsap.to(contact_sideImage, {
+                    height: "1080px",
+                    duration: 1.2
+                })
+            }
+
+            if(window.innerWidth > otherInfo_sideText1.getBoundingClientRect().left + additionalX){
+                gsap.to(otherInfo_sideText1, {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.7
+                })
+            }
+
+            if(window.innerWidth > otherInfo_sideText2.getBoundingClientRect().left + additionalX){
+                gsap.to(otherInfo_sideText2, {
+                    x: 0,
+                    opacity: 1,
+                    duration: 0.7
+                })
+            }
+
+            otherInfo_images.forEach(ele => {
+                if(window.innerWidth > ele.getBoundingClientRect().left){
+                    gsap.to(ele, {
+                        width: "174.95px",
+                        duration: 1.2
+                    })
+                }
+            })
+
+            if(window.innerWidth > email_span.getBoundingClientRect().left + additionalX){
+                gsap.to(email_span, {
+                    x: 0,
+                    opacity: 1,
+                    duration: 0.7
+                })
+            }
+
+
+        });
+
+        box1.addEventListener("click", () => {
+            lscroll.scrollTo(box2_Section);
+        });
+
+        box2.addEventListener("click", () => {
+            lscroll.scrollTo(box3_Section);
+        });
+
+        box3.addEventListener("click", () => {
+            lscroll.scrollTo(box4_Section);
+        });
+
+        box4.addEventListener("click", () => {
+            lscroll.scrollTo(box5_Section);
+        });
     </script>
+
+    <script>
+        const naverMap = document.querySelector("#section6 .navermap"); //지도를 담을 영역의 DOM 레퍼런스
+
+        //지도를 생성할 때 필요한 기본 옵션
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.29116419999998, 126.84192090000015),
+            zoom: 15 //지도의 확대, 축소 정도
+        };
+
+        var map = new naver.maps.Map(naverMap, mapOptions); //지도 생성 및 객체 리턴
+    </script>
+
 </body>
 
 </html>
