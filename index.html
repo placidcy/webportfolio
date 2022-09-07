@@ -352,11 +352,13 @@
 
                     <div class="otherInfo">
                         <div class="InfoContents">
-                            <span class="otherInfo_sideText1">KEEP UP TO DATE</span>
-                            <span class="otherInfo_sideText2">KEEP UP TO DATE</span>
+                            <div class="titleBox">
+                                <span class="otherInfo_sideText1">KEEP UP TO DATE</span>
+                                <span class="otherInfo_sideText2">KEEP UP TO DATE</span>
 
-                            <h2 class="title">latest from the</h2>
-                            <h2 class="title">develop</h2>
+                                <h2 class="title">latest from the</h2>
+                                <h2 class="title">develop</h2>
+                            </div>
 
                             <div class="otherInfo_imageBox">
                                 <div class="img1 imgs"></div>
@@ -857,7 +859,8 @@
                     gsap.to(ele, {
                         opacity: 1,
                         delay: 1.0,
-                        duration: 0.7
+                        duration: 0.7,
+                        x: 0
                     })
                 }
             })
@@ -913,7 +916,7 @@
             section4_imgs.forEach(ele => {
                 if(window.innerWidth > ele.getBoundingClientRect().left + additionalX){
                     gsap.to(ele, {
-                        height: "100%",
+                        height: "55vh",
                         duration: 1
                     })
                 }

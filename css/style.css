@@ -308,6 +308,10 @@ html.has-scroll-dragging {
     display: flex;
 }
 
+.about_box p{
+    font-size: 2.0vh;
+}
+
 .about_box .about1 {
     width: 400px;
     max-height: 60vh;
@@ -500,6 +504,10 @@ html.has-scroll-dragging {
     padding-left: 60vw;
 }
 
+.site_box p {
+    font-size: 1.0vw;
+}
+
 .site_box .work1 {
     width: 70vw;
     height: 70vh;
@@ -669,7 +677,7 @@ html.has-scroll-dragging {
 
 .tetris .descSide p {
     font-family: "ChosunilboNM";
-    font-size: 18px;
+    font-size: 2.2vh;
     text-align: justify;
     margin-bottom: 20px;
     line-height: 1.4;
@@ -704,7 +712,7 @@ html.has-scroll-dragging {
 
 .typingGame .descSide p {
     font-family: "ChosunilboNM";
-    font-size: 18px;
+    font-size: 2.2vh;
     text-align: justify;
     margin-bottom: 20px;
     line-height: 1.4;
@@ -756,7 +764,7 @@ html.has-scroll-dragging {
 
 .cardGame .descSide p {
     font-family: "ChosunilboNM";
-    font-size: 18px;
+    font-size: 2.2vh;
     text-align: justify;
     margin-bottom: 20px;
     line-height: 1.4;
@@ -767,7 +775,7 @@ html.has-scroll-dragging {
     margin-left: 90px;
 }
 
-.cardGame .pageSide {
+.cardGame .pageSide .img{
     background: url(../img/cardGameImg.jpg) no-repeat center;
     width: 55vw;
     height: 55vh;
@@ -833,12 +841,12 @@ html.has-scroll-dragging {
 }
 
 .location .sideText {
-    font-size: 11px;
+    font-size: 0.8rem;
     font-family: 'Saira Condensed';
     position: absolute;
     transform: rotate(90deg);
-    top: 1vh;
-    left: -2.2vw;
+    top: 3vh;
+    left: -3vw;
     letter-spacing: -0.07em;
 }
 
@@ -852,14 +860,14 @@ html.has-scroll-dragging {
 .location .contact_intro {
     font-family: 'IropkeBatang';
     letter-spacing: -0.02em;
-    font-size: 19px;
+    font-size: 1rem;
     font-weight: normal;
     line-height: 1.2;
     white-space: normal;
 }
 
 .location .contact_location {
-    font-size: 22px;
+    font-size: 1rem;
     font-family: 'GTamericaRegular';
     margin-top: 20px;
     font-size: 20px;
@@ -868,8 +876,8 @@ html.has-scroll-dragging {
 }
 
 .contact_sideImage {
-    width: 646px;
-    height: 1080px;
+    width: 40vw;
+    height: 100vh;
     background: url(../img/sideImage1.jpg) no-repeat;
 }
 
@@ -894,21 +902,21 @@ html.has-scroll-dragging {
 }
 
 .emailSection .email_title {
-    font-size: 160px;
+    font-size: 10rem;
     font-family: "TTtrailersBold";
     line-height: 0.84;
     font-variation-settings: "wght"110;
 }
 
 .emailSection .email_title2 {
-    font-size: 160px;
+    font-size: 10rem;
     font-family: "TTtrailersBold";
     line-height: 0.84;
     font-variation-settings: "wght"110;
 }
 
 .emailSection p {
-    font-size: 22px;
+    font-size: 6vw;
     font-family: 'PT Sans Narrow';
     text-align: left;
     line-height: 1.2;
@@ -968,6 +976,9 @@ html.has-scroll-dragging {
     background-color: black;
     display: flex;
     align-items: flex-end;
+}
+
+.otherInfo .titleBox {
     position: relative;
 }
 
@@ -981,21 +992,21 @@ html.has-scroll-dragging {
     font-size: 11px;
     transform: rotate(90deg);
     position: absolute;
-    left: 45px;
-    top: 225px;
+    left: -70px;
+    top: 36px;
 }
 
 .otherInfo_sideText2 {
     color: white;
     font-size: 11px;
     position: absolute;
-    left: 85px;
-    top: 155px;
+    left: -30px;
+    top: -35px;
 }
 
 .otherInfo .title {
     color: white;
-    font-size: 135px;
+    font-size: 13.5vh;
     font-family: "TTtrailersBold";
     line-height: 0.84;
     text-transform: uppercase;
@@ -1011,27 +1022,27 @@ html.has-scroll-dragging {
 }
 
 .otherInfo_imageBox .img1 {
-    width: 174.95px;
-    height: 174.95px;
-    background: url(../img/otherInfo_image1.jpg);
+    width: 25vw;
+    height: 20vh;
+    background: url(../img/otherInfo_image1.jpg) no-repeat;
 }
 
 .otherInfo_imageBox .img2 {
-    width: 174.95px;
-    height: 174.95px;
-    background: url(../img/otherInfo_image2.jpg);
+    width: 25vw;
+    height: 20vh;
+    background: url(../img/otherInfo_image2.jpg) no-repeat;
 }
 
 .otherInfo_imageBox .img3 {
-    width: 174.95px;
-    height: 174.95px;
-    background: url(../img/otherInfo_image3.jpg);
+    width: 25vw;
+    height: 20vh;
+    background: url(../img/otherInfo_image3.jpg) no-repeat;
 }
 
 .otherInfo_imageBox .img4 {
-    width: 174.95px;
-    height: 174.95px;
-    background: url(../img/otherInfo_image4.jpg);
+    width: 25vw;
+    height: 20vh;
+    background: url(../img/otherInfo_image4.jpg) no-repeat;
 }
 
 .otherSites {
